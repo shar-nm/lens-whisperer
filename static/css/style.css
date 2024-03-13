@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Electrolize&display=swap');
+
+.hero {
+    min-height: 100vh;
+}
+
 body {
-    background-color: aquamarine;
+    font-family: "Bitter", serif;
+    font-weight: 100;
 }
