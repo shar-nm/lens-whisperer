@@ -6,6 +6,6 @@ from article.models import Category, Article
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'mainhub/index.html')
+def mainhub(request):
+    return render(request, 'mainhub/main.html')
 

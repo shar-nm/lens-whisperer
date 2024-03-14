@@ -8,5 +8,5 @@ from . import views
 app_name = 'mainhub'
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.mainhub, name='mainhub')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

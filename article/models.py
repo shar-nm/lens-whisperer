@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 
 class Category(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=200)
 
     class Meta:
         ordering = ('name',)
