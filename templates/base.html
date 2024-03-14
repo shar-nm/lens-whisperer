@@ -1,5 +1,7 @@
 {% load static %}
 
+{% url 'article' as article_url %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,9 +30,8 @@
     <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">
-              {% load static %}
 
-                <img src="/workspace/lens-whisperer/static/images/logo-aa.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="{% static '/images/logo-aa.png' %}" height="150" alt="Logo" >
               </a>
 
               <!--toggle for mobile nav-->
@@ -63,16 +64,16 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="bg-dark py-5 mt-5">
+    <footer class="bg-dark py-5 mt-6">
         <div class="containerv text-light text-center">
           <p class="display-5 mb-3">
             ApertureAdventures
           </p>
           <small class="text-white-50 justify-content-between">
-            <i class="fa-brands fa-facebook-f"></i> 
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook-f ms-3"></i> 
+            <i class="fa-brands fa-x-twitter ms-3"></i>
+            <i class="fa-brands fa-instagram ms-3"></i>
+            <i class="fa-brands fa-linkedin ms-3"></i>
           </small>
          
 
