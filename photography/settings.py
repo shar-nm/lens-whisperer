@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'mainhub',
     'photography',
     'article',
+    'dashboard',
 ]
 
 SITE_ID = 1

@@ -27,6 +27,7 @@ class Article(models.Model):
     Iso = models.IntegerField
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
 class Meta:
     ordering = ["-created_on"]

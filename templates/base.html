@@ -17,11 +17,13 @@
 
 <!--fontawesome-->
     <script src="https://kit.fontawesome.com/4785daf8f4.js" crossorigin="anonymous"></script>
-    <!--CSS-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
 <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+       <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
 </head>
 <body>
@@ -41,7 +43,7 @@
           <div class="  collapse navbar-collapse justify-content-end align-center" id="navbarNav">
             <ul class="navbar-nav" >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Articles</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Articles</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Newsletter</a>
@@ -67,7 +69,7 @@
     <footer class="bg-dark py-5 mt-6">
         <div class="containerv text-light text-center">
           <p class="display-5 mb-3">
-            ApertureAdventures
+            ApertureAdventurers
           </p>
           <small class="text-white-50 justify-content-between">
             <i class="fa-brands fa-facebook-f ms-3"></i> 

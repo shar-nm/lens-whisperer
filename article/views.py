@@ -5,7 +5,14 @@ from .models import Category, Article
 
 
 def index(request):
-    return render(request, 'article/index.html')
+    articles = Article.objects.all()
+    categories = Category.objects.all()
+
+    return render(request, 'article/index.html',{
+        'categories': categories,
+        'articles': articles,
+    })
+
    
 
 
