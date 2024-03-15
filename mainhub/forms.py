@@ -5,7 +5,7 @@ from django import forms
 class SignupForm(forms.ModelForm):
     class Meta:
         model = UserRegister
-        fields = ('first_name', 'last_name','email', 'password1','password2')
+        fields = ('first_name', 'last_name','email', 'password','password2')
 
 
 first_name = forms.CharField(widget=forms.TextInput(attrs={

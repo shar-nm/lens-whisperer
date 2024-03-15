@@ -4,8 +4,10 @@ from django.conf.urls.static import static
 from django.urls import path
 
 from . import views
+from .forms import SignupForm
 
 
 urlpatterns = [
-    path('', views.mainhub, name='mainhub')
+    path('', views.mainhub, name='mainhub'),
+    path('signup/', views.signup, name='signup'),
 ]
