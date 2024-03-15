@@ -3,15 +3,23 @@
 
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
-<div class="hero">
-  <div class="color-overlay d-flex justify-content-center align-items-center">
-    <a class="landing" href="#">
-      <img src="{% static '/images/vintage-black-bg.jpg' %}" alt="hero_image" lass="img-fluid" >
-    </a>
-        <h1>Test if the font works</h1>
+<div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item c-item active">
+      <img src="{% static 'images/man_hero.jpg' %}" class="d-block c-img w-100" alt="...">
+    </div>
+    <div class="carousel-item c-item">
+      <img src="{% static 'images/lady_hero.jpg' %}" class="d-block c-img w-100" alt="...">
+    </div>
+    <div class="carousel-item c-item">
+      <img src="{% static 'images/sunset.jpg' %}" class="d-block c-img w-100" alt="...">
+    </div>
   </div>
-    
 </div>
+
+
+     
    
 {% endblock %}
