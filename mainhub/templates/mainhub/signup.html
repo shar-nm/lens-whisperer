@@ -7,6 +7,19 @@
   
 
 <h1>sign up form here</h1>
-{{ form | crispy }}
+
+<form method="POST"
+{% csrf_token %}
+
+{{ form | crispy }>
+
+
+<button type="submit" class="btn btn-primary mt-4">Submit</button>
+
+
+
+
+
+</form>}
 
 {% endblock %}
