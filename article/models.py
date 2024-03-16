@@ -24,17 +24,12 @@ class Article(models.Model):
     lens = models.CharField(max_length=100)
     aperture = models.CharField(max_length=100)
     shutter_speed = models.CharField(max_length=100)
-    Iso = models.IntegerField
+    Iso = models.CharField(max_length=100)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 
-class Meta:
-    ordering = ["-created_on"]
-
-def __str__(self):
-    return f"{self.title} | created by {self.author}"
-
-
+    def __str__(self):
+        return self.title
 
 
