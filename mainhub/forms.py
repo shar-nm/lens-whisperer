@@ -1,11 +1,12 @@
-from .models import UserRegister
+
 from django import forms
+from .models import UserRegister
 
 
 class SignupForm(forms.Form):
     class Meta:
         model = UserRegister
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('first_name','last_name','username', 'email', 'password1', 'password2')
     
     first_name = forms.CharField()
     last_name = forms.CharField() 

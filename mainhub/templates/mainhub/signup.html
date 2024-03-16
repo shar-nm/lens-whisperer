@@ -1,25 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% load crispy_forms_tags %}
 
 {% block content %}
-  
+ 
+<div class="container">
 
 <h1>sign up form here</h1>
-
-<form method="POST"
-{% csrf_token %}
-
-{{ form | crispy }>
+<form action="" method="post">
+  
+{{ form | crispy }}
 
 
 <button type="submit" class="btn btn-primary mt-4">Submit</button>
 
+</form>
 
-
-
-
-</form>}
+</div>
 
 {% endblock %}
