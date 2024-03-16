@@ -13,8 +13,11 @@ def mainhub(request):
 
 
 def signup(request):
-    context = {'form': SignupForm}
-    return render(request, 'mainhub/signup.html', context)
+    form = SignupForm()
+
+    return render(request, 'mainhub/signup.html', {
+        'form': form
+    })
 
 
 
