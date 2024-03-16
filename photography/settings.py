@@ -22,6 +22,12 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = BASE_DIR / 'templates'
 
+#cloudinary import
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -49,6 +55,7 @@ INSTALLED_APPS = [
      'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'cloudinary',
     'crispy_forms',
     'crispy_bootstrap5',
     'mainhub',
@@ -157,3 +164,15 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+#cloudinary - django intergration
+
+cloudinary.config(
+
+   cloud_name = "dbs9jrl1h",
+   api_key = "758836167356375",
+   api_secret = "41nEnLhtnfsachpna-KjN2j7CGo",
+
+
+)
+

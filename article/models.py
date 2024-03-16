@@ -29,7 +29,13 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+
+    class Meta:
+        ordering = ["-created_at"]
+
+
+
     def __str__(self):
-        return self.title
+        return f"{self.title} | written by {self.author}"
 
 
