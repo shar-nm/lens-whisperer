@@ -91,6 +91,8 @@ body {
 
 .article-container {
     margin: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 
