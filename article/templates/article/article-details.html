@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+<!--article details-->
+
+<div class="container article-details">
+    <div class="article-title">Title here</div>
+  <div class="row">
+     <div class="col-6">camera</div>
+     <div class="col-6">lens</div>
+  </div>
+  <div class="row">
+    <div class="col-4">aperture</div>
+    <div class="col-4">shutterspeed</div>
+    <div class="col-4">iso</div> 
+ </div>
+ <div class="row">
+    <p>content</p>
+ </div>
+
+ <div class="container">
+    <h5>reviews here</h5>
+ </div>
+
+
+</div>
+
+<script src="{% static 'js/script.js' %}"></script>  
+   
+
+{% endblock %}
