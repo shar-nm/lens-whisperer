@@ -117,3 +117,42 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.author-details {
+    font-size:medium;
+    font-weight: lighter;
+    color:rgb(145, 144, 144) ;
+    margin-left: 20px;
+    
+}
+
+.camera, .aperture {
+    color: rgb(145, 144, 144);
+    border-bottom: 2px solid rgb(234, 231, 231);
+
+}
+
+.camera-settings {
+    color: rgb(66, 60, 60);
+    margin-left: 20px;
+}
+
+.article-description {
+    color: rgb(145, 144, 144);
+}
+
+.reviews-head {
+    color: rgb(145, 144, 144);
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.send-review {
+    margin-bottom: 20px;
+}
+
+.other-reviews {
+    border: 2px solid rgb(238, 237, 237);
+}

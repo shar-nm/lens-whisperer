@@ -9,24 +9,56 @@
 <!--article details-->
 
 <div class="container article-details">
-    <div class="article-title">Title here</div>
-  <div class="row">
-     <div class="col-6">camera</div>
-     <div class="col-6">lens</div>
+    <div class="image-art-details text-center mb-5">
+        <img src="{{article.image.url}}" class="border border-3 mt-5" alt="image"style="width: 70%;" >
+    </div>
+    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details"> {{article.author}} | {{article.created_on}}</span></div>
+    <div class="col-4 mt-3 mb-3">
+        <h6>{{ article.category }}</h6>
+    </div>
+  <div class="row camera mb-2">
+     <div class="col-6">camera <span class="camera-settings">{{ article.camera }}</span></div>
+     <div class="col-6">lens<span class="camera-settings">{{ article.lens }}</span></div>
   </div>
-  <div class="row">
-    <div class="col-4">aperture</div>
-    <div class="col-4">shutterspeed</div>
-    <div class="col-4">iso</div> 
+  
+  <div class="row aperture mb-2">
+    <div class="col-4">aperture<span class="camera-settings">{{ article.aperture }}</span></div>
+    <div class="col-4">shutter speed<span class="camera-settings">{{ article.shutter_speed }}</span></div>
+    <div class="col-4">Iso<span class="camera-settings">{{ article.Iso }}</span></div> 
  </div>
- <div class="row">
-    <p>content</p>
+ <div class="row article-description mt-5">
+    <p>Description</p>
+    <br>
  </div>
-
  <div class="container">
-    <h5>reviews here</h5>
+ <p>{{ article.description | safe}}</p>
  </div>
+</div>
 
+<!--reviews-->
+
+<div class="container">
+    <div class="rowv reviews-head">
+        <p>Reviews <span class="icon"><i class="fa-regular fa-comment"></i></span></p></div>
+
+<div class=" other-reviews">
+    <p>other reviews go in here</p>
+</div>
+</div>
+
+<!--send review-->
+<div class="container send-review">
+   
+    <div class="container">
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a review here" id="floatingTextarea2" style="height: 150px"></textarea>
+            <label for="floatingTextarea2">Review</label>
+          </div>
+        <button type="button" class="btn btn-secondary mt-2"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Send Review
+</button>   
+        </div>   
 
 </div>
 
