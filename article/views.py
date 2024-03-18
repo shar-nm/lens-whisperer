@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib import messages
 
 from .forms import NewArticleForm
 from .models import Category, Article
@@ -10,14 +11,19 @@ from .models import Category, Article
 def index(request):
     articles = Article.objects.all()
     categories = Category.objects.all()
-    images = Article.objects.all()
 
+    category = None
+    if request.GET:
+        if "category" in request.GET:
+            category = request.GET["category"]
+            articles = articles.filter(category=category)
 
-    return render(request, 'article/index.html', {
+    template = 'article/index.html'
+    context = {
         'categories': categories,
-         'articles': articles,
-         'images': images,
-    }) 
+        'articles': articles,
+    }
+    return render(request, template, context) 
 
 
 def article_details(request,pk):
@@ -35,8 +41,9 @@ def new(request):
 
         if form.is_valid():
             article = form.save(commit=False)
-            article.created_by = request.user
+            article.author = request.user
             article.save()
+            messages.success(request, "Article successfully added!")
 
             return redirect('article-details', pk=article.id)
     else:

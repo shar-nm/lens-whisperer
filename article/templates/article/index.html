@@ -4,81 +4,88 @@
 
 {% block content %}
 
-<link rel="stylesheet" href="{% static 'css/custom.css' %}">
-
 <!--search bar-->
 
-<div class="search-container">
+<!-- <div class="search-container">
   <div class="search-bar">
     <div id="select">
-        <p id="selecttext">
-            Categories         
-        </p> 
-        <i class="fa-solid fa-caret-down"></i>       
-        <ul id="list">
-            <li class="options">All Categories</li>
-            <li class="options">Architecture</li>
-            <li class="options">Landscape</li>
-            <li class="options">Lifestyle</li>
-            <li class="options">People</li>
-            <li class="options">Studio</li>
-        </ul>
-   </div>
-   <input type="text" id="inputfield"  placeholder="search here ">
-   <i class="fa-solid fa-magnifying-glass"></i>
-     
- </div>
-              
+      <p id="selecttext">
+        Categories
+      </p>
+      <i class="fa-solid fa-caret-down"></i>
+      <ul id="list">
+        <li class="options">All Categories</li>
+        <li class="options">Architecture</li>
+        <li class="options">Landscape</li>
+        <li class="options">Lifestyle</li>
+        <li class="options">People</li>
+        <li class="options">Studio</li>
+      </ul>
+    </div>
+    <input type="text" id="inputfield" placeholder="search here ">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+  </div>
+
+</div> -->
+
+<div class="container">
+  <div class="row my-3">
+    <div class="col-12 text-center mx-auto">
+      <a href="{% url 'home' %}"><span class="badge text-bg-primary mx-2 fs-6">ALL</span></a>
+      {% for category in categories %}
+        <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge {% cycle 'text-bg-success' 'text-bg-primary' %} mx-2 fs-6">{{ category }}</span></a>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 <!--article posts-->
 
-<div class="article-container mt-5">
-  <div class="row mb-5">
-    {% for article in articles  %}
-    {% for image in images  %}
-    <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
-    <div class="col-4 card" style="width: 24rem;">
-     <a href="{% url 'article-details' pk=article.pk %}">
-     <img src="{{article.image.url}}" class="card-img-top" alt="image">
-    </a>
-     <div class="card-body">
-     
-      <p>{{article.category}}</p>
-       <h5 class="card-title">{{ article.title }}</h5>
-       <p>{{article.author}} | {{article.created_on}}</p>
-       <p class="card-text">{{ article.description | safe}}</p>
-       <a href="{% url 'article-details' pk=article.pk %}" class="nav-link">more....</a>
-     </div>
-    
-    </div>
-    </div>
-    {% endfor %}  
-    {% endfor %}  
-    
- </div>
-  </div>
-<!--categories count-->
-  <div class="container-fluid text-center bg-secondary-subtle ">
-    <br>
-    <h2 class="mb-12 text-2xl text-center">Categories</h2>
-    <div class="row cat-row mt-5 ">
-        {% for category in categories %}
-        <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
-        <div class="col-4" style="width: 18rem;">
-              
-                    <div class="p-6 bg-white rounded">
-                        <h4>{{ category.name }}</h4>
-                        <p class="text-gray-100">{{ category.articles.count }} articles</p>
-                    </div>
-                
-              </div>
-            </div>
-        {% endfor %}
-      </div>
-  </div>
+<div class="container article-container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+    {% for article in articles %}
+      <div class="col mb-4 hover-animate">
+        <div class="card h-100 rounded shadow">
+          <a href="{% url 'article-details' pk=article.pk %}">
+            <img src="{{article.image.url}}" class="card-img-top" alt="image">
+          </a>
+          <div class="card-body">
 
-<script src="{% static 'js/script.js' %}"></script>  
-   
+            <p>{{ article.category }}</p>
+            <h5 class="card-title">{{ article.title }}</h5>
+            <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }}</p>
+            <p class="card-text">{{ article.description|safe|truncatechars:100 }}</p>
+            <a href="{% url 'article-details' pk=article.pk %}" class="nav-link">more....</a>
+          </div>
+
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+<!--categories count-->
+<div class="container-fluid text-center bg-secondary-subtle ">
+  <br>
+  <h2 class="mb-12 text-2xl text-center">Categories</h2>
+  <div class="row cat-row mt-5 ">
+    {% for category in categories %}
+    <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+      <div class="col-4" style="width: 18rem;">
+
+        <div class="p-6 bg-white rounded">
+          <h4>{{ category.name }}</h4>
+          <p class="text-gray-100">{{ category.articles.count }} articles</p>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="{% static 'js/script.js' %}"></script>
+
 
 {% endblock %}

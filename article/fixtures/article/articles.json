@@ -1,0 +1,71 @@
+[{
+    "model": "article.category",
+    "pk": 1,
+    "fields": {
+        "name": "NATURE"
+    }
+}, {
+    "model": "article.category",
+    "pk": 2,
+    "fields": {
+        "name": "ARCHITECTURE"
+    }
+}, {
+    "model": "article.category",
+    "pk": 3,
+    "fields": {
+        "name": "LANDSCAPE"
+    }
+}, {
+    "model": "article.category",
+    "pk": 4,
+    "fields": {
+        "name": "PEOPLE"
+    }
+}, {
+    "model": "article.category",
+    "pk": 5,
+    "fields": {
+        "name": "LIFESTYLE"
+    }
+}, {
+    "model": "article.category",
+    "pk": 6,
+    "fields": {
+        "name": "STUDIO"
+    }
+}, {
+    "model": "article.article",
+    "pk": 1,
+    "fields": {
+        "category": 3,
+        "title": "Cloudy sky in Thuringia Germany",
+        "author": 1,
+        "image": "image/upload/v1710605056/pejgf8it1ip5ztc4rkeq.jpg",
+        "camera": "Canon EOS D90",
+        "lens": "Sigma 18-35mm f/1.8",
+        "aperture": "f/2.8",
+        "shutter_speed": "1/200",
+        "Iso": "Iso",
+        "description": "I wanted capture this serene landscape for a while now showing the tranquil woods, aa gentle river meanders through the landscape, its crystal-clear waters shimmering in the sunlight provided extra lighting reflecting the surrounding trees like a mirror. I used  my sigma wide length lens so as to portray the river's path as it twists and turns, carving its way through the heart of the forest, . The cloud above it provided a calm but mysterious mood in the picture.",
+        "created_at": "2024-03-16T14:13:10.822Z",
+        "updated_on": "2024-03-16T16:04:18.024Z"
+    }
+}, {
+    "model": "article.article",
+    "pk": 2,
+    "fields": {
+        "category": 5,
+        "title": "Essence of  Innocence",
+        "author": 1,
+        "image": "image/upload/v1710605004/lz5hhklmaghhj5kw6tuh.jpg",
+        "camera": "Nikon D7500",
+        "lens": "Nikkor 50mm f/3.6-6.3 VR",
+        "aperture": "f/5.2",
+        "shutter_speed": "1/50",
+        "Iso": "100",
+        "description": "I enjoy photographing human beings. When i see young children in my travels I like to capture their joyous and carefree nature. With just one shot I can evoke feelings of innocence, vitality, and positivity.",
+        "created_at": "2024-03-16T16:03:24.749Z",
+        "updated_on": "2024-03-16T23:14:52.795Z"
+    }
+}]
