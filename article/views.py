@@ -1,4 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, get_object_or_404, redirect
+
+from .forms import NewArticleForm
 from .models import Category, Article
 
 # Create your views here.
@@ -25,9 +28,26 @@ def article_details(request,pk):
     })
 
         
+@login_required
+def new(request): 
+    if request.method == 'POST':
+        form = NewArticleForm(request.POST, request.FILES)
 
+        if form.is_valid():
+            article = form.save(commit=False)
+            article.created_by = request.user
+            article.save()
 
+            return redirect('article:article_detail', pk=article.id)
+    else:
+        form = NewArticleForm()
 
+    return render(request, 'article/new-article.html', {
+        'form': form,
+        'title': 'Create article',
+    })
+
+   
 
    
 

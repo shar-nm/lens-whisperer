@@ -156,3 +156,8 @@ body {
 .other-reviews {
     border: 2px solid rgb(238, 237, 237);
 }
+
+.form-image {
+   opacity:0.5;
+    
+}
