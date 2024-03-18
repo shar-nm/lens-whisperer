@@ -38,7 +38,7 @@ def new(request):
             article.created_by = request.user
             article.save()
 
-            return redirect('article:article_detail', pk=article.id)
+            return redirect('article-details', pk=article.id)
     else:
         form = NewArticleForm()
 

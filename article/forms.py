@@ -19,7 +19,7 @@ class NewArticleForm(forms.ModelForm):
                 'class': INPUT_CLASSES
             }),
 
-            'author': forms.TextInput(attrs={
+            'author': forms.Select(attrs={
                 'class': INPUT_CLASSES
             }),
             'image': forms.FileInput(attrs={
