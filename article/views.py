@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 
-from .forms import NewArticleForm
+from .forms import NewArticleForm, EditArticleForm
 from .models import Category, Article
 
 # Create your views here.
@@ -54,8 +54,39 @@ def new(request):
         'title': 'Create article',
     })
 
+
+@login_required
+def edit(request, pk): 
+    article = get_object_or_404(Article, pk=pk, author=request.user)
+
+    if request.method == 'POST':
+        form = EditArticleForm(request.POST, request.FILES, instance=article)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Article successfully edited!")
+            return redirect('article-details', pk=article.pk)
+    else:
+        form = EditArticleForm(instance=article)
+
+    
+    return render(request, 'article/new-article.html', {
+        'form': form,
+        'title': 'Edit article',
+    })
+
+
+
+
+@login_required
+def delete(request, pk):
+    article = get_object_or_404(Article, pk=pk, author=request.user)
+    article.delete()
+    messages.success(request, "article deleted!")
+    return redirect('dashboard:dashboard')
+
    
 
    
+
 
    

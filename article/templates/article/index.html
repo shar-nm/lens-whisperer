@@ -6,35 +6,12 @@
 
 <!--search bar-->
 
-<!-- <div class="search-container">
-  <div class="search-bar">
-    <div id="select">
-      <p id="selecttext">
-        Categories
-      </p>
-      <i class="fa-solid fa-caret-down"></i>
-      <ul id="list">
-        <li class="options">All Categories</li>
-        <li class="options">Architecture</li>
-        <li class="options">Landscape</li>
-        <li class="options">Lifestyle</li>
-        <li class="options">People</li>
-        <li class="options">Studio</li>
-      </ul>
-    </div>
-    <input type="text" id="inputfield" placeholder="search here ">
-    <i class="fa-solid fa-magnifying-glass"></i>
-
-  </div>
-
-</div> -->
-
 <div class="container">
   <div class="row my-3">
     <div class="col-12 text-center mx-auto">
-      <a href="{% url 'home' %}"><span class="badge text-bg-primary mx-2 fs-6">ALL</span></a>
+      <a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6">ALL</span></a>
       {% for category in categories %}
-        <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge {% cycle 'text-bg-success' 'text-bg-primary' %} mx-2 fs-6">{{ category }}</span></a>
+        <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge text-bg-success mx-2 fs-6">{{ category }}</span></a>
       {% endfor %}
     </div>
   </div>
@@ -67,16 +44,16 @@
 </div>
 <!--categories count-->
 <div class="container-fluid text-center bg-secondary-subtle ">
-  <br>
-  <h2 class="mb-12 text-2xl text-center">Categories</h2>
+  <h5 class="mb-12 text-2xl text-center">Categories</h5>
   <div class="row cat-row mt-5 ">
+   
     {% for category in categories %}
-    <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+    <div class="col-4 text-center mx-auto mb-4">
       <div class="col-4" style="width: 18rem;">
 
         <div class="p-6 bg-white rounded">
           <h4>{{ category.name }}</h4>
-          <p class="text-gray-100">{{ category.articles.count }} articles</p>
+          <p class="text-gray-100">{{category.articles.count}} articles</p>
         </div>
 
       </div>

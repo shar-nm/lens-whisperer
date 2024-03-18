@@ -12,7 +12,7 @@
     <div class="image-art-details text-center mb-5">
         <img src="{{article.image.url}}" class="border border-3 mt-5" alt="image"style="width: 70%;" >
     </div>
-    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details"> {{article.author}} | {{article.created_on}}</span></div>
+    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details"> {{article.author}} | {{article.created_at|date:"F d, Y" }}</span></div>
     <div class="col-4 mt-3 mb-3">
         <h6>{{ article.category }}</h6>
     </div>
@@ -54,11 +54,16 @@
             <textarea class="form-control" placeholder="Leave a review here" id="floatingTextarea2" style="height: 150px"></textarea>
             <label for="floatingTextarea2">Review</label>
           </div>
-        <button type="button" class="btn btn-secondary mt-2"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Send Review
-</button>   
-        </div>   
+          <div>
+          <a class="btn btn-secondary" href="#" role="delete_button">Send Review</a>
+          {% if request.user == article.author %}
+          <a class="btn btn-warning" href="{% url 'edit' article.id %}" role="delete_button">Edit Article</a>
+          <a class="btn btn-danger" href="{% url 'delete' article.id %}" role="delete_button">Delete Article</a>    
+         {% endif %}
+      </div>
+   </div>   
+
+       
 
 </div>
 

@@ -2,13 +2,13 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 
 
-from article.models import Article
+from article.models import Article, Category
 
 # Create your views here.
 
 @login_required
-def index(request):
-    articles = Article.objects.filter(created_by=request.user)
+def dashboard(request):
+    articles = Article.objects.filter(author=request.user)
 
     return render(request, 'dashboard/dash.html', {
         'articles': articles,
