@@ -9,9 +9,9 @@
 <div class="container">
   <div class="row my-3">
     <div class="col-12 text-center mx-auto">
-      <a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6">ALL</span></a>
+      <a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6 fw-normal">ALL</span></a>
       {% for category in categories %}
-        <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge text-bg-success mx-2 fs-6">{{ category }}</span></a>
+        <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge text-bg-success mx-2 fs-6 fw-normal">{{ category }}</span></a>
       {% endfor %}
     </div>
   </div>

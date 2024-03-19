@@ -38,4 +38,14 @@ class Article(models.Model):
     def __str__(self):
         return f"{self.title} | written by {self.author}"
 
+class Review(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="reviews")
+    author = author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews")
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.article} | written by {self.author}"
+
 

@@ -2,8 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 
-from .forms import NewArticleForm, EditArticleForm
-from .models import Category, Article
+from .forms import NewArticleForm, EditArticleForm, ReviewForm
+from .models import Category, Article, Review
 
 # Create your views here.
 
@@ -87,6 +87,30 @@ def delete(request, pk):
    
 
    
+def review_view(request, pk):
+    article = get_object_or_404(Article, pk=pk)
+    reviews = article.reviews.all().order_by("-created_at")
+    review_count = article.reviews.count()
 
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.author = request.user
+            review.article = article
+            review.save()
+            messages.success(request,'review sent!')
+            return redirect('article:detail', pk=pk)
 
-   
+    else:
+     review_form = ReviewForm()
+ 
+
+    return render(request, "article/reviews.html",
+        {
+            "article": article,
+             "reviews": reviews,
+            "review_count": review_count,
+            "review_form": review_form
+        })
+

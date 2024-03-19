@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Article
+from .models import Article, Review
 
 
 INPUT_CLASSES = 'w-100 py-1 px-3 rounded-xl border'
@@ -76,5 +76,15 @@ class EditArticleForm(forms.ModelForm):
             }),
             'description': forms.Textarea(attrs={
                 'class': INPUT_CLASSES
+            })
+        }
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ('article','author','body',)
+        widgets = {
+            'body': forms.Textarea(attrs={
+                'class': 'w-full py-4 px-6 rounded-xl border'
             })
         }

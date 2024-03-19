@@ -12,9 +12,9 @@
     <div class="image-art-details text-center mb-5">
         <img src="{{article.image.url}}" class="border border-3 mt-5" alt="image"style="width: 70%;" >
     </div>
-    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details"> {{article.author}} | {{article.created_at|date:"F d, Y" }}</span></div>
+    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details reviews-head"> {{article.author}} | {{article.created_at|date:"F d, Y" }}</span></div>
     <div class="col-4 mt-3 mb-3">
-        <h6>{{ article.category }}</h6>
+        <h6 class="reviews-head">{{ article.category }}</h6>
     </div>
   <div class="row camera mb-2">
      <div class="col-6">camera <span class="camera-settings">{{ article.camera }}</span></div>
@@ -33,41 +33,58 @@
  <div class="container">
  <p>{{ article.description | safe}}</p>
  </div>
+ <hr>
 </div>
 
 <!--reviews-->
 
 <div class="container">
-    <div class="rowv reviews-head">
-        <p>Reviews <span class="icon"><i class="fa-regular fa-comment"></i></span></p></div>
-
-<div class=" other-reviews">
-    <p>other reviews go in here</p>
-</div>
-</div>
-
-<!--send review-->
-<div class="container send-review">
    
+    <div class="row reviews-head mb-2">
+        <p>Reviews <span class="icon"><i class="fa-regular fa-comment"></i>{{article.reviews.count}}</span></p></div>   
+</div>
+
+<div class="container">
+  <h4 class="fw-normal">Reviews...</h4>
+
+  <div class="mb-4 mt-1">
+  <a class="text-decoration-none" href="{% url 'review' article.id %}">add a review</a>
+</div>
+
+  {% if not article.reviews.all %}
+         No Reviews Yet...! 
+         {% else %}
+         <div class="container">
+         
+     {% for review in article.reviews.all  %}
+         <p class="reviews-head "> 
+     {{review.author}} - {{ review.created_at|date:"F d, Y" }}
+    <p>     
+           {{ review.body }}         
+        {% endfor %}
+          
+   
+    
+</div>  
+<div class="mb-4 mt-1">
+  <a class="text-decoration-none" href="{% url 'review' article.id %}">add a review</a>
+</div>
+{% endif %}
+<hr>   
+</div>
+<br>
+<br>
+
+<!--edit article section--> 
     <div class="container">
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a review here" id="floatingTextarea2" style="height: 150px"></textarea>
-            <label for="floatingTextarea2">Review</label>
-          </div>
-          <div>
-          <a class="btn btn-secondary" href="#" role="delete_button">Send Review</a>
+          <div>  
           {% if request.user == article.author %}
+           <a class="btn btn-secondary" href="{% url 'edit' article.id %}" role="delete_button">Send</a>
           <a class="btn btn-warning" href="{% url 'edit' article.id %}" role="delete_button">Edit Article</a>
           <a class="btn btn-danger" href="{% url 'delete' article.id %}" role="delete_button">Delete Article</a>    
          {% endif %}
       </div>
    </div>   
-
-       
-
-</div>
-
-<script src="{% static 'js/script.js' %}"></script>  
    
 
 {% endblock %}
