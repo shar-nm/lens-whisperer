@@ -93,17 +93,16 @@ def review_view(request, pk):
     review_count = article.reviews.count()
 
     if request.method == "POST":
-        review_form = ReviewForm(data=request.POST)
-        if review_form.is_valid():
-            review = review_form.save(commit=False)
+        form = ReviewForm(data=request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
             review.author = request.user
             review.article = article
             review.save()
-            messages.success(request,'review sent!')
-            return redirect('article:detail', pk=pk)
+            return redirect('article-details', pk=pk)
 
     else:
-     review_form = ReviewForm()
+     form = ReviewForm()
  
 
     return render(request, "article/reviews.html",
@@ -111,6 +110,6 @@ def review_view(request, pk):
             "article": article,
              "reviews": reviews,
             "review_count": review_count,
-            "review_form": review_form
+            "form": form
         })
 

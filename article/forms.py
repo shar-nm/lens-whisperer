@@ -82,9 +82,9 @@ class EditArticleForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ('article','author','body',)
+        fields = ('body',)
         widgets = {
             'body': forms.Textarea(attrs={
-                'class': 'w-full py-4 px-6 rounded-xl border'
+                'class': 'form-control py-4 px-6 rounded-xl border'
             })
         }

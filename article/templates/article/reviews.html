@@ -5,16 +5,17 @@
 {% block content %}
 
 <div class="container">
-    <h4>Add review</h4>
+    <h3>Add review</h3>
     <div>
-        <form method="post" >
+        <form method="post">
             {% csrf_token %}    
+
             {{ form.as_p}} 
           
        
         
                
-        <button type="submit" class="btn btn-primary mt-2 mb-2">review</button>
+        <button type="submit" class="btn btn-primary mt-2 mb-2">send</button>
         </form>
         
     </div>
