@@ -27,13 +27,13 @@
           <a href="{% url 'article-details' pk=article.pk %}">
             <img src="{{article.image.url}}" class="card-img-top" alt="image">
           </a>
-          <div class="card-body">
+          <div class="card-body text-body-tertiary">
 
             <p>{{ article.category }}</p>
-            <h5 class="card-title">{{ article.title }}</h5>
-            <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }} <span class="icon"><i class="fa-solid fa-comment"></i>{{article.reviews.count}}</span></p>
-            <p class="card-text">{{ article.description|safe|truncatechars:100 }}</p>
-            <a href="{% url 'article-details' pk=article.pk %}" class="nav-link">more....</a>
+            <h5 class="card-title text-black ">{{ article.title }}</h5>
+            <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }} <span></span>&nbsp;<span class="icon"><i class="fa-solid fa-comment"></i></span>&nbsp;<span>{{article.reviews.count}}</span></p>
+            <p class="card-text text-black">{{ article.description|safe|truncatechars:100 }}</p>
+            <a href="{% url 'article-details' pk=article.pk %}" class="nav-link text-primary">more....</a>
           </div>
 
         </div>

@@ -14,7 +14,10 @@
     <div class="image-art-details text-center mb-5">
         <img src="{{article.image.url}}" class="border border-3 mt-5" alt="image"style="width: 70%;" >
     </div>
-    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details "> {{article.author}} | {{article.created_at|date:"F d, Y" }}</span></div>
+    <div class="col-9 title-art-details fs-2 fw-bolder mt-2">{{ article.title }} <span class=" author-details "> {{article.author}} | {{article.created_at|date:"F d, Y" }}</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="icon text-body-tertiary fw-normal fs-5"><i class="fa-solid fa-comment"></i></span>&nbsp;<span class="text-body-tertiary fw-normal fs-5">{{article.reviews.count}}</span>
+    </div>
     <div class="col-4 mt-3 mb-3">
         <h6 class="reviews-head">{{ article.category }}</h6>
     </div>
@@ -43,7 +46,9 @@
 <div class="container">
    
     <div class="row reviews-head mb-2">
-        <p><i class="fa-regular fa-comment">{{article.reviews.count}}</i></p></div>   
+      <p><span class="icon text-body-tertiary fw-normal fs-5"><i class="fa-solid fa-comment"></i></span>&nbsp;
+      <span class="text-body-tertiary fw-normal fs-5">{{article.reviews.count}}</span></p>
+    </div>   
 </div>
 
 <div class="container">
@@ -78,12 +83,11 @@
 <br>
 
 <!--edit article section--> 
-    <div class="container">
-          <div>  
+    <div class="container d-flex justify-content-end mb-5">
+          <div class="row  update_btns">  
           {% if request.user == article.author %}
-           <a class="btn btn-secondary" href="{% url 'edit' article.id %}" role="delete_button">Send</a>
-          <a class="btn btn-warning" href="{% url 'edit' article.id %}" role="delete_button">Edit Article</a>
-          <a class="btn btn-danger" href="{% url 'delete' article.id %}" role="delete_button">Delete Article</a>    
+          <div class=" col fs-6"><a class="btn btn-warning" href="{% url 'edit' article.id %}" role="edit_button">Edit</a></div>
+          <div class=" col fs-6"><a class="btn btn-danger" href="{% url 'delete' article.id %}" role="delete_button">Delete</a></div>    
          {% endif %}
       </div>
    </div>   

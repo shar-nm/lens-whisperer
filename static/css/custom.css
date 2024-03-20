@@ -30,7 +30,10 @@ body > footer {
     justify-content: center;
 }
 
-/* .article-container {
+
+
+
+/*.article-container {
     margin: 20px;
     display: flex;
     justify-content: space-around;
@@ -88,6 +91,10 @@ body > footer {
 
 .icon {
     margin-left: 10px;
+}
+
+.update_btns {
+   padding-right: 10px;
 }
 
 .send-review {

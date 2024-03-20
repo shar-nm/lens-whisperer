@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row my-3">
       <div class="col-12 text-center mx-auto">
-        <a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6">ALL ARTICLES</span></a>
+        <a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6 fw-normal">ALL ARTICLES</span></a>
         {% for category in categories %}
           <a href="{% url 'home' %}?category={{ category.id }}"><span class="badge text-bg-success mx-2 fs-6">{{ category }}</span></a>
         {% endfor %}
@@ -20,23 +20,27 @@
   
   <!--article posts-->
 
-  <h2>My Articles</h2>
+  
   
   <div class="container article-container mt-5">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+
+    <h3 class="fw-semibold">My Articles</h3>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 mt-5">
       {% for article in articles %}
         <div class="col mb-4 hover-animate">
           <div class="card h-100 rounded shadow">
             <a href="{% url 'article-details' pk=article.pk %}">
               <img src="{{article.image.url}}" class="card-img-top" alt="image">
             </a>
-            <div class="card-body">
+            <div class="card-body text-body-tertiary">
   
               <p>{{ article.category }}</p>
-              <h5 class="card-title">{{ article.title }}</h5>
-              <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }}</p>
-              <p class="card-text">{{ article.description|safe|truncatechars:100 }}</p>
-              <a href="{% url 'article-details' pk=article.pk %}" class="nav-link">more....</a>
+              <h5 class="card-title text-black">{{ article.title }}</h5>
+              <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }} <span></span>&nbsp;<span class="icon"><i class="fa-solid fa-comment"></i></span>&nbsp;
+                <span>{{article.reviews.count}}</span></p>
+              <p class="card-text text-black">{{ article.description|safe|truncatechars:100 }} </p>
+              <a href="{% url 'article-details' pk=article.pk %}" class="nav-link text-primary">more....</a>
             </div>
   
           </div>
