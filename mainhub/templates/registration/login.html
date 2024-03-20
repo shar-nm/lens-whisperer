@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+ 
+<div class="container login p-6 mt-5">
+
+
+<div class="row login-form">
+
+    <h3 class="py-2">Login here.</h3>
+
+<div class="form col-sm-6 mt-5">
+
+<form action="" method=POST>
+    {% csrf_token %}
+  
+    <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" aria-describedby="emailHelp"> 
+    </div>
+     <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" >
+    </div>
+
+<button type="submit" class="btn btn-primary mt-2 mb-2">Login</button>
+
+</form>
+</div>
+<div class="col-6  px-4">
+    <img src="{% static 'images/retro.jpg' %}" alt="lens_image"style="width: 24rem; opacity: 0.1;">
+</div>
+</div>
+</div>
+
+{% endblock %}

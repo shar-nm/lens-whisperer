@@ -1,21 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load crispy_forms_tags %}
-
-
 
 {% block content %}
- 
-<div class="container login p-6 mt-5">
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
-<h2>Login here.</h2>
+
+<div class="container signup p-6 mt-5">
+<h2>Sign up here.</h2>
 <br>
-<div class="row login-form">
+<div class="row signupform ">
 <div class="form col-sm-6">
-<form action="" method="post">
+<form action="" method=POST>
     {% csrf_token %}
   
-{{ form | crispy }}
+{{ form.as_p }}
+
+
+
 
 <button type="submit" class="btn btn-primary mt-2 mb-2">Submit</button>
 
