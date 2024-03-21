@@ -20,7 +20,7 @@ def index(request):
             category = request.GET["category"]
             articles = articles.filter(category=category)
     
-    p = Paginator( Article.objects.all(), 1)
+    p = Paginator( Article.objects.all(), 6)
     page = request.GET.get('page')
     articles = p.get_page(page)
 
@@ -105,6 +105,7 @@ def review_view(request, pk):
             review.author = request.user
             review.article = article
             review.save()
+            messages.success(request, "review sent!")
             return redirect('article-details', pk=pk)
 
     else:

@@ -15,7 +15,7 @@ body > footer {
 }
 
 .main-links {
-    border: none;
+    
 }
 
 .signup {
@@ -108,4 +108,8 @@ body > footer {
 .form-image {
    opacity:0.5;
     
+}
+
+.news-cards {
+    width: 100vw;
 }
