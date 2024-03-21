@@ -4,8 +4,10 @@ from django.contrib import messages
 
 from .forms import NewArticleForm, EditArticleForm, ReviewForm
 from .models import Category, Article, Review
-
+from django.core.paginator import Paginator
 # Create your views here.
+
+
 
 
 def index(request):
@@ -17,6 +19,10 @@ def index(request):
         if "category" in request.GET:
             category = request.GET["category"]
             articles = articles.filter(category=category)
+    
+    p = Paginator( Article.objects.all(), 1)
+    page = request.GET.get('page')
+    articles = p.get_page(page)
 
     template = 'article/index.html'
     context = {
