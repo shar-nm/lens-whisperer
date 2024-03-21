@@ -33,11 +33,11 @@ import cloudinary.api
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%hpgvz#lr01881f4g(wr0b)tp&^ka!=@gr3#v*qti@z6u($8)0'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEBUG' in os.environ
+DEBUG = os.environ.get("DEBUG", False)
 
 ALLOWED_HOSTS = ['.gitpod.io','.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io','https://*.herokuapp.com']
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'allauth',
+    'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'cloudinary',
@@ -126,16 +126,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -171,11 +171,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 #cloudinary - django intergration
 
 cloudinary.config(
-
-   cloud_name = "dbs9jrl1h",
-   api_key = "758836167356375",
-   api_secret = "41nEnLhtnfsachpna-KjN2j7CGo",
-
-
+   cloud_name = os.environ.get("CLOUDINARY_NAME"),
+   api_key = os.environ.get("CLOUDINARY_API"),
+   api_secret = os.environ.get("CLOUDINARY_SECRET"),
 )
-
