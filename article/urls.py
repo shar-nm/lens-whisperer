@@ -13,3 +13,4 @@ urlpatterns = [
     path('<int:pk>/edit/', views.edit, name='edit'),
     path('articles/<int:pk>/', views.review_view, name='review'),
 ]
+

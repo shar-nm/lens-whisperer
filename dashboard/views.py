@@ -13,3 +13,6 @@ def dashboard(request):
     return render(request, 'dashboard/dash.html', {
         'articles': articles,
     })
+
+def newsletter(request):
+    return render(request, 'dashboard/news.html')

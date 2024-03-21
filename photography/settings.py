@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'photography',
     'article',
     'dashboard',
+    'newsletter',
 ]
 
 SITE_ID = 1
