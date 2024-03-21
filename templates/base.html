@@ -32,9 +32,9 @@
 
     <!--navbar-->
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-body-success bg-opacity-50" >
         <div class="container-fluid ">
-            <a class="navbar-brand fw-bold" href="{% url 'mainhub' %}">
+            <a class="navbar-brand fw-light fs-1" href="{% url 'mainhub' %}">
         Aperture Adventurers
               </a>
 
@@ -43,10 +43,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="  collapse navbar-collapse justify-content-end align-center" id="navbarNav">
-            <ul class="navbar-nav" >
+            <ul class="navbar-nav " >
               {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link active" href="{% url 'new-article' %}">Create Article</a>
+                <button class="create-link"><a class="nav-link active" href="{% url 'new-article' %}">Create Article</a></button>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="{% url 'dashboard:dashboard' %}">Dashboard</a>
@@ -99,7 +99,7 @@
     {% endblock %}
 
     <footer class="bg-dark py-5 mt-6">
-        <div class="containerv text-light text-center">
+        <div class="container text-light text-center">
           <p class="display-5 mb-3">
             ApertureAdventurers
           </p>

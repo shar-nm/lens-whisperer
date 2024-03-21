@@ -18,6 +18,16 @@ body > footer {
     
 }
 
+.navbar { 
+    background-color: rgba(25, 135, 84, 0.3);
+}
+
+.create-link {
+    background-color: rgb(99,112,227);
+    border: none;
+    border-radius: 4px;
+}
+
 .signup {
     border: 1px solid rgb(66, 60, 60); 
     box-shadow: 2px 2px 2px rgb(66, 60, 60);
@@ -29,23 +39,6 @@ body > footer {
     align-items:center ;
     justify-content: center;
 }
-
-
-
-
-/*.article-container {
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-} */
-
-
-
-/* .card {
-    border: 2px;
-    border-radius: 2px;
-    box-shadow: 0 0 6px rgb(113, 113, 113);
-} */
 
 .c-item {
     height: 480px;
@@ -112,4 +105,9 @@ body > footer {
 
 .news-cards {
     width: 100vw;
+}
+
+.cat-container {
+    background-color:rgb(25, 135, 84, 0.3);
+
 }

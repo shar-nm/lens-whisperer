@@ -24,7 +24,7 @@
   
   <div class="container article-container mt-5">
 
-    <h3 class="fw-semibold">My Articles</h3>
+    <h4 class="fw-light">My Articles</h4>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 mt-5">
       {% for article in articles %}
@@ -50,25 +50,6 @@
     </div>
   </div>
   <!--categories count-->
-  <div class="container-fluid text-center bg-secondary-subtle ">
-    <div class="row cat-row mt-5 ">
-      <h2 class="mb-12 text-2xl text-center">Categories</h2>
-      {% for category in categories %}
-      <div class="col-4 text-center mx-auto mb-4">
-        <div class="col-4" style="width: 18rem;">
-  
-          <div class="p-6 bg-white rounded">
-            <h4>{{ category.name }}</h4>
-            <p class="text-gray-100">{{category.articles.count}} articles</p>
-          </div>
-  
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  
-  <script src="{% static 'js/script.js' %}"></script>
-  
+ 
   
   {% endblock %}
