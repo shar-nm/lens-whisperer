@@ -69,25 +69,21 @@
           <p class="card-text fw-light">Dive into a world of captivating visuals, where stunning landscapes, mesmerizing portraits, and breathtaking scenes come to life through the lens of our passionate photographers.where every image tells a story</p>
         </div>
       </div>
-      {% if request.user.is_authenticated %}
+    
 
       <div class=" card col-sm-4 mb-3" style="max-width: 20rem;">
         <div class="card-header">
+        
           <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Peer Review</a>
           <i class="fa-solid fa-pen-nib"></i>
         </div>
-        
+  
         <div class="card-body">
           <h5 class="card-title">Create discourse</h5>
           <p class="card-text fw-light">Whether you're an amateur enthusiast or a seasoned pro, our blog is your ultimate destination for inspiration. You can get involved in giving tips, and techniques to elevate each other's photography skills. </p>
         </div>
       </div>
-      {% else %}
-      <div class="container py-5 px-5 text-center">
-        <h3 class="fw-light">Ooops! Signup To View This Page...</h3>
-        <a href="{% url 'account_signup' %}">Signup</a>
-      </div>
-    {% endif  %}
+     
       <div class="card col-sm-4 mb-3" style="max-width: 20rem;">
         <div class="card-header">
           <a class="nav-link active" aria-current="page" href="{% url 'newsletter' %}">Newsletter</a>
