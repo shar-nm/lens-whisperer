@@ -6,17 +6,16 @@
 {% if request.user.is_authenticated %}
 
 <!--article details-->
-
 <div class="container article-details">
-	<div class="image-art-details text-center mb-5">
+	<div class=" text-center mb-5">
 		<img src="{{article.image.url}}" class="border border-3 mt-5" alt="image" style="width: 70%;">
 	</div>
-	<div class="col-9 title-art-details fs-2 fw-bolder mt-2">
+	<div class="col-9 fs-2 fw-bolder mt-2">
 		{{ article.title }}
 		<span class="author-details me-5">
 			{{article.author}} | {{article.created_at|date:"F d, Y" }}
 		</span>
-		<span class="icon text-body-tertiary fw-normal fs-5">
+		<span class="icon review-icon text-body-tertiary fw-normal fs-5">
 			<i class="fa-solid fa-comment me-1"></i>
 		</span>
 		<span class="text-body-tertiary fw-normal fs-5">{{article.reviews.count}}</span>
@@ -28,7 +27,6 @@
 		<div class="col-6">camera <span class="camera-settings">{{ article.camera }}</span></div>
 		<div class="col-6">lens<span class="camera-settings">{{ article.lens }}</span></div>
 	</div>
-
 	<div class="row aperture mb-2">
 		<div class="col-4">aperture<span class="camera-settings">{{ article.aperture }}</span></div>
 		<div class="col-4">shutter speed<span class="camera-settings">{{ article.shutter_speed }}</span></div>
@@ -45,9 +43,7 @@
 </div>
 
 <!--reviews-->
-
 <div class="container">
-
 	<div class="row reviews-head mb-2">
 		<p>
 			<span class="icon text-body-tertiary fw-normal fs-5">
@@ -57,28 +53,21 @@
 		</p>
 	</div>
 </div>
-
 <div class="container">
 	<h4 class="fw-normal">Reviews...</h4>
-
 	<div class="mb-4 mt-1">
 		<a class="text-decoration-none" href="{% url 'review' article.id %}">add a review</a>
 	</div>
-
 	{% if not article.reviews.all %}
 	No Reviews Yet...!
 	{% else %}
 	<div class="container">
-
 		{% for review in article.reviews.all  %}
 		<p class="reviews-head ">
 			{{review.author}} - {{ review.created_at|date:"F d, Y" }}
 			<p>
 				{{ review.body }}
 				{% endfor %}
-
-
-
 	</div>
 	<div class="mb-4 mt-1">
 		<a class="text-decoration-none" href="{% url 'review' article.id %}">add a review</a>
@@ -96,14 +85,12 @@
 		<div class=" col fs-6">
 			<a class="btn btn-warning" href="{% url 'edit' article.id %}" role="edit_button">Edit</a>
 		</div>
-
 		<div class=" col fs-6">
 			<a class="btn btn-danger" type="submit" href="{% url 'delete' article.id %}" role="delete_button">Delete</a>
 		</div>
 		{% endif %}
 	</div>
 </div>
-
 {% else %}
 <div class="container py-5 px-5 text-center">
 	<h3 class="fw-light">Ooops! Log In To View This Page...</h3>

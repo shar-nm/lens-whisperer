@@ -3,47 +3,43 @@
 
 {% block content %}
 
-
 <!--carousel-->
 <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-  
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  
+
   <div class="carousel-inner">
     <div class="carousel-item c-item active">
-      <img src="{% static 'images/man_hero.jpg' %}" class="d-block c-img w-100" alt="...">
+      <img src="{% static 'images/man_hero.jpg' %}" class="d-block c-img w-100" alt="man with camera">
       <div class="carousel-caption top-0 mt-4 ">
-        <p class="mt-5 fs-3 text-uppercase">Share the photographer experience</p>
+        <p class="mt-5 fs-3 text-uppercase text-white">Share the photographer experience</p>
         <h1 class="display-1 fw-bolder text-capitalized">Aperture Adventurers</h1>
         <a class="btn btn-success px-4 py-2 fs-5 mt-5href=" href="{% url 'account_signup' %}" role="button">Sign Up</a>
-       
       </div>
 
     </div>
     <div class="carousel-item c-item">
-      <img src="{% static 'images/lady_hero.jpg' %}" class="d-block c-img w-100 " alt="...">
+      <img src="{% static 'images/lady_hero.jpg' %}" class="d-block c-img w-100 " alt="lady with camera">
       <div class="carousel-caption top-0 mt-4 ">
-        <p class="mt-5 fs-3 text-uppercase">Inspiring Connections Through Photography</p>
+        <p class="mt-5 fs-3 text-uppercase text-white">Inspiring Connections Through Photography</p>
         <h1 class="display-1 fw-bolder text-capitalized">Unveiling Visual Stories</h1>
         <a class="btn btn-success px-4 py-2 fs-5 mt-5href=" href="{% url 'account_signup' %}" role="button">Sign Up</a>
-       
       </div>
-   
+
     </div>
     <div class="carousel-item c-item">
-      <img src="{% static 'images/sunset.jpg' %}" class="d-block c-img w-100" alt="...">
+      <img src="{% static 'images/sunset.jpg' %}" class="d-block c-img w-100" alt="sunset">
       <div class="carousel-caption top-0 mt-4 ">
-        <p class="mt-5 fs-3 text-uppercase">Every Click, is a Window to the Soul</p>
+        <p class="mt-5 fs-3 text-uppercase text-white">Every Click, is a Window to the Soul</p>
         <h1 class="display-1 fw-bolder text-capitalized">camera . frame . shoot</h1>
         <a class="btn btn-success px-4 py-2 fs-5 mt-5href=" href="{% url 'account_signup' %}" role="button">Sign Up</a>
-       
       </div>
-    
     </div>
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -57,48 +53,44 @@
   <!--links-->
 </div>
 <div class="container">
-  <div class="row main-links card-row justify-content-between mt-4">
-      <div class=" card col-sm-4 main-links mb-3" style="max-width: 20rem;">
-        <div class="card-header">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Articles</a><span>
-            <i class="fa-solid fa-book-open"></i>
-          </span>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Showcase</h5>
-          <p class="card-text fw-light">Dive into a world of captivating visuals, where stunning landscapes, mesmerizing portraits, and breathtaking scenes come to life through the lens of our passionate photographers.where every image tells a story</p>
-        </div>
+  <div class="row main-links card-row justify-content-around mt-4">
+    <div class=" card col-sm-4 main-links mb-3" style="max-width: 20rem;">
+      <div class="card-header">
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Articles</a><span>
+          <i class="fa-solid fa-book-open"></i>
+        </span>
       </div>
-    
-
-      <div class=" card col-sm-4 mb-3" style="max-width: 20rem;">
-        <div class="card-header">
-        
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Peer Review</a>
-          <i class="fa-solid fa-pen-nib"></i>
-        </div>
-  
-        <div class="card-body">
-          <h5 class="card-title">Create discourse</h5>
-          <p class="card-text fw-light">Whether you're an amateur enthusiast or a seasoned pro, our blog is your ultimate destination for inspiration. You can get involved in giving tips, and techniques to elevate each other's photography skills. </p>
-        </div>
+      <div class="card-body">
+        <h5 class="card-title">Showcase</h5>
+        <p class="card-text fw-light">Dive into a world of captivating visuals, where stunning landscapes, mesmerizing
+          portraits, and breathtaking scenes come to life through the lens of our passionate photographers.where every
+          image tells a story</p>
       </div>
-     
-      <div class="card col-sm-4 mb-3" style="max-width: 20rem;">
-        <div class="card-header">
-          <a class="nav-link active" aria-current="page" href="{% url 'newsletter' %}">Newsletter</a>
-          <i class="fa-solid fa-newspaper"></i>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Stay updated</h5>
-          <p class="card-text fw-light">Exclusive newsletter, our curated collection of insights, inspiration, and industry developments and discovery. Stay connected and uptodate with news and events in the photography community and around the globe. </p>
-        </div>
+    </div>
+    <div class=" card col-sm-4 mb-3" style="max-width: 20rem;">
+      <div class="card-header">
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Peer Review</a>
+        <i class="fa-solid fa-pen-nib"></i>
       </div>
+      <div class="card-body">
+        <h5 class="card-title">Create discourse</h5>
+        <p class="card-text fw-light">Whether you're an amateur enthusiast or a seasoned pro, our blog is your ultimate
+          destination for inspiration. You can get involved in giving tips, and techniques to elevate each other's
+          photography skills. </p>
+      </div>
+    </div>
+    <div class="card col-sm-4 mb-3" style="max-width: 20rem;">
+      <div class="card-header">
+        <a class="nav-link active" aria-current="page" href="{% url 'newsletter' %}">Newsletter</a>
+        <i class="fa-solid fa-newspaper"></i>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Stay updated</h5>
+        <p class="card-text fw-light">Exclusive newsletter, our curated collection of insights, inspiration, and
+          industry developments and discovery. Stay connected and uptodate with news and events in the photography
+          community and around the globe. </p>
+      </div>
+    </div>
   </div>
-
-
 </div>
-
-     
-   
 {% endblock %}

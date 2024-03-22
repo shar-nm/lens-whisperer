@@ -4,9 +4,7 @@
 
 {% block content %}
 
- 
-<!--search bar-->
-
+<!--search buttons-->
 <div class="container">
     <div class="row my-3">
       <div class="col-12 text-center mx-auto">
@@ -19,13 +17,8 @@
   </div>
   
   <!--article posts-->
-
-  
-  
   <div class="container article-container mt-5">
-
     <h4 class="fw-light">My Articles</h4>
-
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 mt-5">
       {% for article in articles %}
         <div class="col mb-4 hover-animate">
@@ -34,7 +27,6 @@
               <img src="{{article.image.url}}" class="card-img-top" alt="image">
             </a>
             <div class="card-body text-body-tertiary">
-  
               <p>{{ article.category }}</p>
               <h5 class="card-title text-black">{{ article.title }}</h5>
               <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }} <span></span>&nbsp;<span class="icon"><i class="fa-solid fa-comment"></i></span>&nbsp;
@@ -42,14 +34,9 @@
               <p class="card-text text-black">{{ article.description|safe|truncatechars:100 }} </p>
               <a href="{% url 'article-details' pk=article.pk %}" class="nav-link text-primary">more....</a>
             </div>
-  
           </div>
         </div>
       {% endfor %}
-  
     </div>
   </div>
-  <!--categories count-->
- 
-  
   {% endblock %}

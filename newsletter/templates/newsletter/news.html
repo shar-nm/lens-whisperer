@@ -5,23 +5,20 @@
 {% block content %}
 
 <!--heading-->
-<div class="container mt-3">
-  <div class="row text-center">
-    <div class="col-4 text-center ">
-      <h4 class="neon mb-2">Exciting!</h4>
+<div class="container m-5">
+  <div class="row text-center mt-3">
+    <div class="col-sm-4 text-center align-self-baseline">
+      <h4 class="neon mb-2 ">Exciting News!</h4>
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       <h1>Newsletter</h1>
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       <p class="fs-6 text-body-tertiary">March 2024</p>
     </div>
   </div>
-  <div class="col-6 text-center">
-    Features
-  </div>
-  <div class="col-6 text-center">
-    In and around the world
+  <div class=" mt-2 text-center justify-content-center text-decoration-underline">
+    Features - News ,Events and Useful Links
   </div>
 </div>
 </div>
@@ -32,72 +29,86 @@
     <div class="col-sm-6 ">
       <div class="card bg- " style="max-width: 570px;">
         <div class="row g-0">
-
           <div class="col-md-6">
             <img src="{% static 'images/lenses.jpg' %}" class="img-fluid rounded-start" alt="lens">
           </div>
-
           <div class="col-md-6 text-center">
             <div class="card-body ">
               <h4 class="card-title">Which lens...?</h4>
-              <p class="card-text">
-              </p>
-              <p class="card-text"><small class="text-body-secondary">Editor - SMS</small></p>
+              <small class="card-text text-body-secondary">
+                Choosing a good all rounder lens can be a mine field. We will give you a few pointers
+              </small>
             </div>
           </div>
-
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       <hr>
-
       <p>You may be wondering what lens should you be using.
         Well choosing the right lens for your photography depends on factors such as the subject matter,
         shooting conditions, and desired creative effects. If you are just starting out, I would say to go
         for a zoom lens. Its affordable and offer variable focal lengths, allowing you to zoom in and out to frame
         your shot without changing lenses.</p>
-
       <hr>
     </div>
-
     <div class="col-6">
-      events
+      <br>
+      <h6 class="text-decoration-underline">Other Links</h6>
+      <ul class="">
+        <li><small>Editing Suite : </small>
+          <a class="active" href="https://www.adobe.com/uk/" target="blank">Adobe Creative Cloud.</a>
+        </li>
+        <li><small>Best Pohtography Drone : </small>
+          <a class="active" href="https://store.dji.com/uk" target="blank">DJI mini pro.</a>
+        </li>
+        <li><small>Affordable Studio Lighting: </small>
+          <a class="active" href="https://www.essentialphoto.co.uk/" target="blank">Essential Photo & Video.</a>
+        </li>
+
+      </ul>
     </div>
     <div class="col-6">
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3" style="max-width: 570px;">
         <div class="row g-0">
-
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Events & Shows</h5>
+              <ul class="card-text">
+                <li><a class="active" href="https://www.photographyshow.com/" target="blank">
+                    <small>The photography and Video Show - BIRMINGHAM</small></a>
+                </li>
+                <li><a class="active" href="https://photographyfarm.co.uk/thrive-2024/" target="blank">
+                    <small>Photography Farm - Thrive 2024 , LONDON</small></a>
+                </li>
+                <li><a class="active" href="https://www.castlecameras.co.uk/springshoot" target="blank">
+                    <small>SpringShoot - BOURNEMOUTH</small></a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="{% static 'images/magnifying-glass.png' %}" class="img-fluid rounded-start mt-3"
+              alt="magnifying glass">
           </div>
         </div>
       </div>
     </div>
-    
-
     <div class="col-sm-6">
       <div class="card bg- " style="max-width: 570px;">
         <div class="row g-0">
           <div class="col-md-6">
-            <img src="{% static 'images/fun-image.jpg' %}" class="img-fluid rounded-start" alt="lens">
+            <img src="{% static 'images/fun-image.jpg' %}" class="img-fluid rounded-start" alt="happy lady">
           </div>
           <div class="col-md-6 text-center">
             <div class="card-body">
-              <h4 class="card-title">Creative for Socials..</h4>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-body-secondary">Editor - SMS</small></p>
+              <h4 class="card-title">Creative for Socials...</h4>
+              <small class="card-text text-body-secondary">
+                also remembering keep your brand's identity and target audience in mind
+                when creating creative images for social media.
+              </small>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -107,18 +118,12 @@
         Are you next trend, on social platforms. Its always a
         good idea to make your work creative, social media requires a blend of creativity, relevance,
         and visual appeal. Here's creative idea for social media images across different platforms. Make
-        it playful you'll be suprised on how much engagement you'll get. Monetizing is a great discussion 
+        it playful you'll be suprised on how much engagement you'll get. Monetizing is a great discussion
         on this to bring to the April edition.
       </p>
       <hr>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
+<br>
 {% endblock %}

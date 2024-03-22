@@ -8,28 +8,26 @@ from django.core.paginator import Paginator
 # Create your views here.
 
 
-
-
 def index(request):
     articles = Article.objects.all()
     categories = Category.objects.all()
 
     category = None
-    if request.GET:
-        if "category" in request.GET:
-            category = request.GET["category"]
-            articles = articles.filter(category=category)
-    
-    p = Paginator( Article.objects.all(), 6)
-    page = request.GET.get('page')
-    articles = p.get_page(page)
+    if request.GET.get("category"):
+            category_id = request.GET.get("category")
+            articles = articles.filter(category_id=category_id)
+            category = Category.objects.get(id=category_id)
+           
+    paginator = Paginator(articles, 6)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
-    template = 'article/index.html'
     context = {
         'categories': categories,
-        'articles': articles,
+        'articles': page_obj,
+        'category': category,
     }
-    return render(request, template, context) 
+    return render(request, 'article/index.html', context)
 
 
 def article_details(request,pk):
@@ -74,12 +72,10 @@ def edit(request, pk):
     else:
         form = EditArticleForm(instance=article)
 
-    
     return render(request, 'article/new-article.html', {
         'form': form,
         'title': 'Edit article',
     })
-
 
 
 @login_required
@@ -92,8 +88,6 @@ def delete(request, pk):
     return render( request,'delete.html', {
         'article':article
     })
-
-   
 
    
 def review_view(request, pk):
@@ -110,11 +104,8 @@ def review_view(request, pk):
             review.save()
             messages.success(request, "review sent!")
             return redirect('article-details', pk=pk)
-
     else:
      form = ReviewForm()
- 
-
     return render(request, "article/reviews.html",
         {
             "article": article,
@@ -122,4 +113,3 @@ def review_view(request, pk):
             "review_count": review_count,
             "form": form
         })
-

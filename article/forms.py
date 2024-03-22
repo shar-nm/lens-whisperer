@@ -5,7 +5,6 @@ from .models import Article, Review
 
 INPUT_CLASSES = 'w-100 py-1 px-3 rounded-xl border'
 
-
 class NewArticleForm(forms.ModelForm):
     class Meta:
         model = Article

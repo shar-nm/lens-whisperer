@@ -47,5 +47,3 @@ class Review(models.Model):
 
     def __str__(self):
         return f"{self.article} | written by {self.author}"
-
-
