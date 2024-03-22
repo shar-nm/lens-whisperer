@@ -3,6 +3,7 @@
 body {
     font-family: "Bitter", serif;
     font-weight: 400;
+    background-color: rgba(25, 135, 84, 0.3);
 }
 
 html, body {
@@ -16,11 +17,16 @@ body > footer {
 
 .main-links {
     
+
+    
+    
 }
 
 .navbar { 
     background-color: rgba(25, 135, 84, 0.3);
-}
+    /* border: 2px solid rgba(25, 135, 84, 0.3);
+     */
+} 
 
 .create-link {
     background-color: rgb(99,112,227);
@@ -122,12 +128,6 @@ body > footer {
 
 .neon {
     letter-spacing: 1px;
-    color: rgb(255, 0, 0, 0.6);
-    text-shadow:
-     0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px red,
-    0 0 80px red,
-    0 0 90px red;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
