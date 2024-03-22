@@ -104,10 +104,30 @@ body > footer {
 }
 
 .news-cards {
-    width: 100vw;
+   
+    display: flex;
+    justify-content: center;
 }
+
+.newsletter-box {
+    display: flex;
+    justify-content: center;
+}
+
 
 .cat-container {
     background-color:rgb(25, 135, 84, 0.3);
 
+}
+
+.neon {
+    letter-spacing: 1px;
+    color: rgb(255, 0, 0, 0.6);
+    text-shadow:
+     0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px red,
+    0 0 80px red,
+    0 0 90px red;
 }
