@@ -26,6 +26,6 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('accounts/',include('allauth.urls')),
     path('mainhub/', include('django.contrib.auth.urls')),
-     path('newsletter/', include('newsletter.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ]
 

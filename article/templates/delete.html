@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container text-center mt-5 myForm py-6 px-6">
+<form action="" method="POST" id="delete-form">
+    {% csrf_token %}
+    <h3 class="fw-light">Are you sure you want delete article ..?</h3><br>
+    <input class="btn btn-danger" type="submit" value="Delete">
+
+    <a href="{% url 'article-details' article.id %}" class="btn btn-primary">Cancel</a>
+
+</form>
+</div>
+
+{% endblock %}

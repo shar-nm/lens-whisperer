@@ -82,13 +82,16 @@ def edit(request, pk):
 
 
 
-
 @login_required
 def delete(request, pk):
     article = get_object_or_404(Article, pk=pk, author=request.user)
-    article.delete()
-    messages.success(request, "article deleted!")
-    return redirect('dashboard:dashboard')
+    if request.method == 'POST':
+       article.delete()
+       messages.success(request, "article successfully deleted!")
+       return redirect('dashboard:dashboard')
+    return render( request,'delete.html', {
+        'article':article
+    })
 
    
 
