@@ -29,8 +29,13 @@
             <div class="card-body text-body-tertiary">
               <p>{{ article.category }}</p>
               <h5 class="card-title text-black">{{ article.title }}</h5>
-              <p>{{ article.author }} | {{article.created_at|date:"F d, Y" }} <span></span>&nbsp;<span class="icon"><i class="fa-solid fa-comment"></i></span>&nbsp;
-                <span>{{article.reviews.count}}</span></p>
+              <p>
+                <span class="me-3">{{ article.author }} | {{article.created_at|date:"F d, Y" }}</span>
+                <span class="icon fs-6">
+                  <i class="fa-solid fa-comment"></i>
+                </span>
+                <span class="fw-light fs-6">{{article.reviews.count}}</span>
+              </p>
               <p class="card-text text-black">{{ article.description|safe|truncatechars:100 }} </p>
               <a href="{% url 'article-details' pk=article.pk %}" class="nav-link text-primary">more....</a>
             </div>

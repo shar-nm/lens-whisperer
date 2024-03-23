@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
+
 {% load static %}
 
 {% block content %}
 
 {% if request.user.is_authenticated %}
+
+<!--search buttons-->
+<div class="container">
+	<div class="row my-3">
+	  <div class="col-12 text-center mx-auto">
+		<a href="{% url 'home' %}"><span class="badge text-bg-success mx-2 fs-6 fw-normal">ALL ARTICLES</span></a>
+	  </div>
+	</div>
+  </div>
 
 <!--article details-->
 <div class="container article-details">
@@ -12,13 +22,14 @@
 	</div>
 	<div class="col-9 fs-2 fw-bolder mt-2">
 		{{ article.title }}
-		<span class="author-details me-5">
+		<br>
+		<span class="author-details me-2">
 			{{article.author}} | {{article.created_at|date:"F d, Y" }}
 		</span>
-		<span class="icon review-icon text-body-tertiary fw-normal fs-5">
-			<i class="fa-solid fa-comment me-1"></i>
+		<span class="icon text-body-tertiary fw-light fs-6">
+			<i class="fa-solid fa-comment"></i>
 		</span>
-		<span class="text-body-tertiary fw-normal fs-5">{{article.reviews.count}}</span>
+		<span class="text-body-tertiary fw-light fs-6">{{article.reviews.count}}</span>
 	</div>
 	<div class="col-4 mt-3 mb-3">
 		<h6 class="reviews-head">{{ article.category }}</h6>
@@ -37,7 +48,7 @@
 		<br>
 	</div>
 	<div class="container">
-		<p>{{ article.description|safe|linebreaksbr }}</p>
+		<p class="text-black">{{ article.description|safe|linebreaksbr }}</p>
 	</div>
 	<hr class="border-2">
 </div>
@@ -46,10 +57,10 @@
 <div class="container">
 	<div class="row reviews-head mb-2">
 		<p>
-			<span class="icon text-body-tertiary fw-normal fs-5">
-				<i class="fa-solid fa-comment me-1"></i>
+			<span class="icon text-body-tertiary fw-light fs-6">
+				<i class="fa-solid fa-comment"></i>
 			</span>
-			<span class="text-body-tertiary fw-normal fs-5">{{article.reviews.count}}</span>
+			<span class="text-body-tertiary fw-light fs-6">{{article.reviews.count}}</span>
 		</p>
 	</div>
 </div>
@@ -65,7 +76,7 @@
 		{% for review in article.reviews.all  %}
 		<p class="reviews-head ">
 			{{review.author}} - {{ review.created_at|date:"F d, Y" }}
-			<p>
+			<p class="text-black">
 				{{ review.body }}
 				{% endfor %}
 	</div>

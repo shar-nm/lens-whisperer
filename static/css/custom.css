@@ -4,7 +4,7 @@
 body {
     font-family: "Bitter", serif;
     font-weight: 400;
-    background-color: rgba(25, 135, 84, 0.3);
+   /* background-color: rgba(25, 135, 84, 0.3);*/
 }
 
 html, body {
@@ -56,9 +56,6 @@ body > footer {
     margin-left: 20px;
 }
 
-.article-description {
-    color: rgb(145, 144, 144);
-}
 
 /*Reviews*/
 .reviews-head {
@@ -104,6 +101,11 @@ body > footer {
 
 .cat-container , p {
     color: rgb(123, 123, 123);
+}
+
+.cat-name {
+    font-size: small;
+    color: black;
 }
 
 .neon {
