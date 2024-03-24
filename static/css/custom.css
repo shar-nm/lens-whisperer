@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Electrolize&display=swap');
 
-/* body */
+/* body and base.html */
 body {
     font-family: "Bitter", serif;
     font-weight: 400;
-   /* background-color: rgba(25, 135, 84, 0.3);*/
+  
 }
 
 html, body {
@@ -99,58 +99,54 @@ body > footer {
     margin:auto;
 }
 
-.news-container .row .header {
+.header {
+    
     width: 60%;
     text-align: center;
-    margin: auto;
+    margin:auto;
 
 }
 
-.news-container .row .header h1{
+.header h1{
     padding-top: 30px;
     font-size: 45px;
     color:rgb(25, 135, 84, 0.3) ;
 }
 
-.news-container .row .header h5{
+.header h5{
     margin-top: 15px;
     font-size: 18px;
     line-height: 1.5;
     color:rgb(123, 123, 123) ;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
 
-.content .card {
+.cards {
     width: 30rem;
     flex:1;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    margin: 50px 10px;
     background-color: #fff;
 }
 
-.content .card img {
+.cards img {
     width: 100%;
     height: auto;
 }
 
-.content .card h4{
+.cards h4{
     margin-top: 10px;
     margin-left: 10px;
     font-size: 18px;
 }
 
-.content .card p{
+.cards p{
     font-size: 15px;
     color:darkslategray;
     line-height: 1.5;
     padding: 10px;
 }
+
+/* category count*/
 
 .cat-container {
     background-color:rgb(25, 135, 84, 0.3);
@@ -165,8 +161,3 @@ body > footer {
     color: black;
 }
 
-.neon {
-    letter-spacing: 1px;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
