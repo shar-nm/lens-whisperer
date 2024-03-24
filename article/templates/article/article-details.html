@@ -104,8 +104,9 @@
 </div>
 {% else %}
 <div class="container py-5 px-5 text-center">
-	<h3 class="fw-light">Ooops! Log In To View This Page...</h3>
+	<h3 class="fw-light">Ooops! Log In or Signup To View This Page...</h3>
 	<a href="{% url 'account_login' %}">Login</a>
+	<a href="{% url 'account_signup' %}">Signup</a>
 </div>
 {% endif  %}
 

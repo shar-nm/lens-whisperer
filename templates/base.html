@@ -45,7 +45,7 @@
         <ul class="navbar-nav ">
           {% if request.user.is_authenticated %}
           <li class="nav-item">
-            <button class="create-link"><a class="nav-link active " href="{% url 'new-article' %}">Create
+            <button class="create-link"><a class="nav-link active text-white " href="{% url 'new-article' %}">Create
                 Article</a></button>
           </li>
           <li class="nav-item">
@@ -104,14 +104,20 @@
         ApertureAdventurers
       </p>
       <small class="justify-content-between">
-        <a class="text-white-50" href="https://www.facebook.com/" alt="facebook" target="_blank"><i
+        <a class="text-white" href="https://www.facebook.com/" alt="facebook" target="_blank"><i
             class="fa-brands fa-facebook-f ms-3"></i></a>
-        <a class="text-white-50" href="https://twitter.com/" alt="twitter" target="_blank"><i
+        <a class="text-white" href="https://twitter.com/" alt="twitter" target="_blank"><i
             class="fa-brands fa-x-twitter ms-3"></i></a>
-        <a class="text-white-50" href="https://instagram.com/" alt="instagram" target="_blank"><i
+        <a class="text-white" href="https://instagram.com/" alt="instagram" target="_blank"><i
             class="fa-brands fa-instagram ms-3"></i></a>
-        <a class="text-white-50" href="https://linkedin.com/" alt="linkedin" target="_blank"><i
+        <a class="text-white" href="https://linkedin.com/" alt="linkedin" target="_blank"><i
             class="fa-brands fa-linkedin ms-3"></i></a>
+            <br>
+            <br>
+            <span class="font-monospace fw-light text-white-50">
+              <i class="fa-regular fa-copyright"></i>
+              copyright | Sharon Simpson 2024
+            </span>
       </small>
     </div>
   </footer>
