@@ -4,127 +4,88 @@
 
 {% block content %}
 
-<!--heading-->
-<div class="container m-5">
-  
-  <div class="row text-center">
-    <div class="col-sm-4 text-center align-self-baseline">
-      <h4 class="neon mb-2 ">Exciting News!</h4>
-    </div>
-    <div class="col-sm-4">
-      <h1>Newsletter</h1>
-    </div>
-    <div class="col-sm-4">
-      <p class="fs-6 text-body-tertiary">March 2024</p>
-    </div>
-  </div>
-  <div class=" mt-2 text-center justify-content-center text-decoration-underline">
-    Features - News ,Events and Useful Links
-  </div>
-</div>
-</div>
+<title>Newsletter</title>
+<section class="newsletter">
+  <div class="container news-container">
+    <div class="row">
+      <div class="header">
+        <h1>Newsletter</h1>
+        <h5>
+          Features - News ,Events and Useful Links
+        </h5>
+      </div>
+      <div class="content">
+        <div class="card col-sm-6">
+          <img src="{% static 'images/camera.jpg' %}" class="img-fluid" alt="lens">
+          <h4>All rounder Lens for beginners</h4>
+          <div class="card-body">
+            <h6>
+              Choosing a good all rounder lens can be a mine field. We will give you a few pointers
+            </h6>
+            <p>
+              You may be wondering what lens should you be using.
+              Well choosing the right lens for your photography depends on factors such as the subject matter,
+              shooting conditions, and desired creative effects. If you are just starting out, I would say to go
+              for a zoom lens. Its affordable and offer variable focal lengths, allowing you to zoom in and out to
+              frame
+              your shot without changing lenses.
+            </p>
+          </div>
+        </div>
 
-<!--body-->
-<div class="container news-cards">
-  <div class="row">
-    <div class="col-sm-6  mb-2">
-      <div class="card bg- " style="max-width: 570px;">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img src="{% static 'images/lenses.jpg' %}" class="img-fluid rounded-start" alt="lens">
-          </div>
-          <div class="col-md-6 text-center">
-            <div class="card-body ">
-              <h4 class="card-title">Which lens...?</h4>
-              <small class="card-text text-body-secondary">
-                Choosing a good all rounder lens can be a mine field. We will give you a few pointers
-              </small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <hr>
-      <p>You may be wondering what lens should you be using.
-        Well choosing the right lens for your photography depends on factors such as the subject matter,
-        shooting conditions, and desired creative effects. If you are just starting out, I would say to go
-        for a zoom lens. Its affordable and offer variable focal lengths, allowing you to zoom in and out to frame
-        your shot without changing lenses.</p>
-      <hr>
-    </div>
-    <div class="col-6">
-      <br>
-      <h6 class="text-decoration-underline">Other Links</h6>
-      <ul class="">
-        <li><small>Editing Suite : </small>
-          <a class="active" href="https://www.adobe.com/uk/" target="blank">Adobe Creative Cloud.</a>
-        </li>
-        <li><small>Best Pohtography Drone : </small>
-          <a class="active" href="https://store.dji.com/uk" target="blank">DJI mini pro.</a>
-        </li>
-        <li><small>Affordable Studio Lighting: </small>
-          <a class="active" href="https://www.essentialphoto.co.uk/" target="blank">Essential Photo & Video.</a>
-        </li>
 
-      </ul>
-    </div>
-    <div class="col-6">
-      <div class="card mb-3" style="max-width: 570px;">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Events & Shows</h5>
-              <ul class="card-text">
-                <li><a class="active" href="https://www.photographyshow.com/" target="blank">
-                    <small>The photography and Video Show - BIRMINGHAM</small></a>
-                </li>
-                <li><a class="active" href="https://photographyfarm.co.uk/thrive-2024/" target="blank">
-                    <small>Photography Farm - Thrive 2024 , LONDON</small></a>
-                </li>
-                <li><a class="active" href="https://www.castlecameras.co.uk/springshoot" target="blank">
-                    <small>SpringShoot - BOURNEMOUTH</small></a>
-                </li>
-              </ul>
-            </div>
+        <div class="card">
+          <img src="{% static 'images/magnifying-glass.png' %}" class="img-fluid" alt="magnifying glass">
+          <h4>Events and Shows</h4>
+          <div class="card-body">
+            <ul>
+              <li><a class="active" href="https://www.photographyshow.com/" target="blank">
+                  <small>The photography and Video Show - BIRMINGHAM</small></a>
+              </li>
+              <li><a class="active" href="https://photographyfarm.co.uk/thrive-2024/" target="blank">
+                  <small>Photography Farm - Thrive 2024 , LONDON</small></a>
+              </li>
+              <li><a class="active" href="https://www.castlecameras.co.uk/springshoot" target="blank">
+                  <small>SpringShoot - BOURNEMOUTH</small></a>
+              </li>
+            </ul>
+            <br>
+            <h4 class="text-decoration-underline">Other Links</h4>
+            <ul>
+              <li><small>Editing Suite : </small>
+                <a class="active" href="https://www.adobe.com/uk/" target="blank">Adobe Creative Cloud.</a>
+              </li>
+              <li><small>Best Pohtography Drone : </small>
+                <a class="active" href="https://store.dji.com/uk" target="blank">DJI mini pro.</a>
+              </li>
+              <li><small>Affordable Studio Lighting: </small>
+                <a class="active" href="https://www.essentialphoto.co.uk/" target="blank">Essential Photo & Video.</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <img src="{% static 'images/magnifying-glass.png' %}" class="img-fluid rounded-start mt-3"
-              alt="magnifying glass">
+        </div>
+
+
+
+        <div class="card col-sm-6">
+          <img src="{% static 'images/fun-image.jpg' %}" class="img-fluid" alt="happy lady">
+          <div class="card-body">
+            <h4>Creative for Social Media Content</h4>
+            <h6>
+              Keeping your brand's identity and target audience in mind
+              when creating images for social media.
+            </h6>
+            <p>
+              Are you next trend, on social platforms. Its always a
+              good idea to make your work creative, social media requires a blend of creativity, relevance,
+              and visual appeal. Here's creative idea for social media images across different platforms. Make
+              it playful you'll be suprised on how much engagement you'll get. Monetizing is a great discussion
+              that we should be exploring.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="card bg- " style="max-width: 570px;">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img src="{% static 'images/fun-image.jpg' %}" class="img-fluid rounded-start" alt="happy lady">
-          </div>
-          <div class="col-md-6 text-center">
-            <div class="card-body">
-              <h4 class="card-title">Creative for Socials...</h4>
-              <small class="card-text text-body-secondary">
-                also remembering keep your brand's identity and target audience in mind
-                when creating creative images for social media.
-              </small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <hr>
-      <p>
-        Are you next trend, on social platforms. Its always a
-        good idea to make your work creative, social media requires a blend of creativity, relevance,
-        and visual appeal. Here's creative idea for social media images across different platforms. Make
-        it playful you'll be suprised on how much engagement you'll get. Monetizing is a great discussion
-        on this to bring to the April edition.
-      </p>
-      <hr>
-    </div>
-  </div>
-</div>
+</section>
 <br>
 {% endblock %}

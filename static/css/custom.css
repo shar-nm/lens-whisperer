@@ -84,15 +84,72 @@ body > footer {
 }
 
 /*newsletter*/
-.news-cards {
-   
-    display: flex;
-    justify-content: center;
+.newsletter {
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
 }
 
-.newsletter-box {
+.news-container {
+    width:100%
+}
+
+.news-container .row {
+    width:80%;
+    margin:auto;
+}
+
+.news-container .row .header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.news-container .row .header h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color:rgb(25, 135, 84, 0.3) ;
+}
+
+.news-container .row .header h5{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color:rgb(123, 123, 123) ;
+}
+
+.content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content .card {
+    width: 30rem;
+    flex:1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.content .card img {
+    width: 100%;
+    height: auto;
+}
+
+.content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.content .card p{
+    font-size: 15px;
+    color:darkslategray;
+    line-height: 1.5;
+    padding: 10px;
 }
 
 .cat-container {
