@@ -393,9 +393,130 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Won't Have**: not a priority for this iteration
 
 
+
 ## Testing
 
-TESTING.MD
+> [!NOTE]  
+> Return back to the [README.md](README.md) file.
+
+Feature-by-Feature Testing:
+
+- Navigation:
+Testested for smooth transitions between pages, links directing to the correct destinations.
+- Responsive Design: 
+Checked for compatibility across various devices and screen sizes.
+
+SS
+
+
+- Portfolio Display: 
+Articles are properly showcased with accurate descriptions, images, and links.
+
+
+
+- Contact Forms: 
+Tested the form submission process, ensuring the user receives a confirmation.
+
+SS
+
+User Experience Testing:
+
+- Usability Testing: 
+Family memebers interacted with the site and provided feedback. Log out confirmation was missing a cancel option. A cancel button thst links back ti the home page was added.
+
+- Accessibility Testing: 
+All images and links have well labeled alt text for screen reader compatibility compliance.
+
+Compatibility Testing:
+
+- Browser Compatibility: 
+Testing applied on different browsers (Chrome, Firefox, Safari,) to ensure consistent performance.
+
+SS
+
+- Device Compatibility:
+ EnsurED Functionality across various devices (desktops, laptops, tablets, and mobile phones).
+
+ SS
+
+- Performance Testing (optional):
+	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
+	- Scalability Testing: Assess how the site handles increased traffic or usage.
+
+
+Documentation and Logs:
+
+Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
+
+User Feedback Incorporation:
+
+Color contrast user feedback has been taken into account and implemented to enhance the user experience. Text in article description has been changed from gray to black.
+
+
+
+## Code Validation
+
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| article | article-details.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | new-article.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | reviews.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | delete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| dashboard | dash.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | main.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | news.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| static | custom.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| static | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| Directory | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| article | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| dashboard | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| dashboard | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| dashboard | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| dashboard | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| mainhub | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| photography | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| photography | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+## Browser Compatibility
 
 
 
