@@ -501,34 +501,38 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
+| Browser | Home | Articles | Newsletter | | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
-
+| Chrome | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/af3fa93f-a0c6-4a90-a193-cc05f397e21d)
+|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f541033c-dc7f-44d2-b407-e205f008999e)
+| ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/81ae2419-7392-4f4f-a6a7-7b9b0c9c973b)
+ || Works as expected |
+| Safari |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9aba2a87-97a0-4b74-b9e4-9b409d0c7f7a)
+ ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/cc018aeb-d277-406b-95cb-c94f5f5975f1)
+|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/114619ad-1db2-48a4-897c-baf74c86cff6)
+|||Minor CSS differences|
 
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | About | Contact | etc | Notes |
+| Device | Home |  |  | | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/46e12b78-023c-4e08-af32-85c3c63bdd0b)
 |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6ac914cf-5938-4fe1-8ed9-43ce89d2b8e4)|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f661eabc-ea61-4462-99f2-9009aa28a6d4)
 | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b9914c37-b162-4a17-9093-161272fc292e)
 | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/69d094e9-c7b5-45df-87d5-dd69ff505414)
 | Works as expected |
-| Tablet (DevTools) | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e31054f3-8f1b-4c74-951a-4e69aa5f1c69)
+| Tablet (DevTools) | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e31054f3-8f1b-4c74-951a-4e69aa5f1c69)|
 ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/88046cdd-ca38-4cf6-9e59-bd0beaceffc2)
-| ![screenshot] ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1cd7387d-2087-48d2-8585-147b5a046ce4)
+| ![screenshot] ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1cd7387d-2087-48d2-8585-147b5a046ce4)|
  ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/a8293760-eb93-4aa1-a424-9096ddb0154d)
 | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6debb803-5b89-4eca-b407-d6a69e7e01a7)
 | Works as expected |
 | Desktop | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9362d47b-5b80-4ee4-b7d3-832a86c56335)
 | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/be13226c-96cf-4faf-8e4f-3d27558ba6a9)
 | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/da240a28-ac26-44e8-9ee6-1ee764df9faf)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e9ad7dcb-bd02-4a7f-9d00-daf8cc93f931)
+| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e9ad7dcb-bd02-4a7f-9d00-daf8cc93f931)|
 
 ## Lighthouse Audit
 
@@ -538,10 +542,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Home |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/520a9bc0-6a6f-4931-94b6-3b3b4f980b51)
 |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/471b77f3-1cd0-41a0-ad15-f7627f713e4c) performance due to internet connection |
-| Articles | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6488b0b6-169a-4dc1-b1d8-4a318ee025db)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/94b4454f-55fc-41b3-9763-d4b6ca95357a)
+| Articles |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6488b0b6-169a-4dc1-b1d8-4a318ee025db)
+|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/94b4454f-55fc-41b3-9763-d4b6ca95357a)
 | Some minor warnings |
-| Newsletter | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e0d546d1-e9f7-4b1c-be8c-fe4cada86360)|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/3fdaf010-40f6-42fa-b3a3-e5013b5d13da)
+| Newsletter |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e0d546d1-e9f7-4b1c-be8c-fe4cada86360)|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/3fdaf010-40f6-42fa-b3a3-e5013b5d13da)
 | Slow response time due to large images |
 
 ## Defensive Programming
@@ -576,17 +580,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | User Story | Screenshot |
 | --- | --- |
-| As a site user, I would like to signup to the site so that I can can post articles and read other people's articles | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/89bd41bc-65f7-482f-8f0c-88dbbbdada9f)
-| As a site user,I can login to my account, so that I can I see my previous posted articles  | ![screenshot] ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1ce882ac-0cd3-4e22-96c2-cb07c7995683)
-| As a site user I can view the articles, so that I can read and learn from the articles. | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/178d76a5-93a3-4e1f-af14-05028456459a)|
-| As a site user I can review a peer's article, so that I can I can make a contribution to the blog article | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f4b7cd52-1d51-47d5-8806-8bed51f16f6b)|
-| As a site user I can create an article and post my image , so that I can feedback from other users. | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/cdaf0bf3-68ee-4826-8a7b-879313c8c208)|
-| As a site user I can edit and or delete my articles, so that I can manage my own content on the site | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d7a71a35-65e9-414e-b26c-4aede0a04623)|
+| As a site user, I would like to signup to the site so that I can can post articles and read other people's articles | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/89bd41bc-65f7-482f-8f0c-88dbbbdada9f)
+| As a site user,I can login to my account, so that I can I see my previous posted articles  |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1ce882ac-0cd3-4e22-96c2-cb07c7995683)
+| As a site user I can view the articles, so that I can read and learn from the articles. | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/178d76a5-93a3-4e1f-af14-05028456459a)|
+| As a site user I can review a peer's article, so that I can I can make a contribution to the blog article | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f4b7cd52-1d51-47d5-8806-8bed51f16f6b)|
+| As a site user I can create an article and post my image , so that I can feedback from other users. |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/cdaf0bf3-68ee-4826-8a7b-879313c8c208)|
+| As a site user I can edit and or delete my articles, so that I can manage my own content on the site | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d7a71a35-65e9-414e-b26c-4aede0a04623)|
 | As a site user I can logout of my account so that I can keep my account secure
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d3c832a3-9643-4264-8d44-a3be42f5f2a5)|
-| As a site admin, I should be able to access all the articles and reviews, so that I can manage the site effectively. | ![screenshot] ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/071520c3-a98a-4f66-884f-ae8625c13879)
-
-| As a site admin, I should be able to  share news in the photography industry so that I can keep users informed. | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e145bd04-d862-4179-b7c6-f974f36a130b)
+|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d3c832a3-9643-4264-8d44-a3be42f5f2a5)|
+| As a site admin, I should be able to access all the articles and reviews, so that I can manage the site effectively. | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/071520c3-a98a-4f66-884f-ae8625c13879)
+| As a site admin, I should be able to  share news in the photography industry so that I can keep users informed. |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e145bd04-d862-4179-b7c6-f974f36a130b)
 
 
 ## Deployment
