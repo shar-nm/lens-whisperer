@@ -172,13 +172,8 @@ Dashboard
 
 - The landing page has a carousel of 3 images taking up 3/4 of the page. These are images of photographers at work to depict what the site is about. There is an overlay of text on each that gives the purpose of the website and photography qoutes that encourage the users to sign up. The other 1/4 is taken up by three cards that explain the 3 purposes of the site, to showcase their work, provide andn or receive peer review and access information in the photography industry.
 
-  Desktop
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9f648f29-3941-499a-89da-2dc0caa1042b)
-
-Mobile
-
-Tablet
 
 
 -**The Footer**
@@ -189,9 +184,7 @@ Tablet
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/40cc11c4-234f-40b5-9b14-d14f64eb3d7a)
 
-  Mobile
 
- Tablet
 
 -**Articles**
 
@@ -203,7 +196,7 @@ Tablet
 - Users get a message when they've successfully sent a review
 - Users can see how many reviews each article has at a glance.
 
-  Desktop
+
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/4ceec615-108f-4346-954e-4c9e96f3eee5)
 
@@ -219,11 +212,6 @@ Tablet
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f710b2f4-fb6a-429c-9c9c-db9419c53052)
 
-  
-
-  Mobile
-
-  Tablet
 
 -**Dashboard**
 
@@ -232,7 +220,6 @@ Tablet
 - Users get a prompt message if they really want to delete. This is everytime they delete an article to give them a chance to change their mind if need be. 
 - There is an all articles button at the top of this page for easy navigation for the user to go back to view all articles on the site.
 
-  Desktop
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/75efd0af-e594-4bba-b10a-4b1077b9ca26)
 
@@ -242,24 +229,11 @@ Tablet
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/ac6e2e94-15bb-4b8a-be80-6ad366a10efb)
 
-  Mobile
-
-  Tablet
-
-  
-
 -**Newsletter**
 
 - The Newsletter provides an opportunity to promote photography services, products, workshops, or other offerings to the audience.  The users can benefit from carefully curated industry content that is engaging and informative.
 
-  Desktop
-
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/2634cb10-eaea-4215-b3d3-18526f2d8199)
-
-  Mobile
-
-  Tablet
-  
 
 -**Signup**
 
@@ -267,16 +241,9 @@ Tablet
 - This allows the user to be able to post articles as well as send reviews on other people's work. 
 - User's get a message pop up letting themn know they have successfully signed up.
 
-  Desktop
-
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/a7760a34-9a78-49aa-898c-8fc547842e7d)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/38c8b419-dfe4-4e6a-82cc-db2f4826fcd8)
-
-  Mobile
-
-  Tablet
-  
 
 -**LogIn** 
 
@@ -285,15 +252,9 @@ Tablet
 -  The logIn will then change to logout once the user is successfully loggedin.
 - The user gets a prompt message if they are sure they want to log out , before getting a message they have successfully logged out if they complete the process.
 
-  Desktop
-
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/fd9bf4cb-dfbc-4ab8-a57d-60a4cec4c266)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b4b96e60-f4cc-48dd-9e0b-9c6c87928856)
-
-  Mobile
-
-  Tablet
   
 -**Create Article**
 
@@ -303,17 +264,12 @@ Tablet
 - In the discription the user gets to explain what they were trying to achieve how they have got there if succesful , or they can ask their peers on what else the could have done top achieve this.
 - Once sent users get a message , their article has been posted successfully 
 
-  Desktop
-  
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/7764a0bf-03a0-4027-9bd2-e1b54384c249)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/4d69c8ad-ba81-404e-abbb-39bedc56b4f2)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/93ec5d44-a507-46bd-9488-7139884a21cb)
   
- Mobile
-
- Tablet
 
 ### Future Features
 
@@ -582,7 +538,42 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
+[CI Blog](https://github.com/Code-Institute-Solutions/blog.git)
+[SteinOveHelset](https://github.com/SteinOveHelset/puddle.git)
+[Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw/about)
 
+
+
+### Content
+
+ [ChatGPT 3.5](https://chat.openai.com/?model=text-davinci-002-render-sha)
+ [Adobe Creative Cloud](https://www.adobe.com/uk/creativecloud/photography/discover.html)
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
+| [StackOverflow](https://stackoverflow.com/questions/78216228/how-can-i-authenticate-a-user-based-on-correct-incorrect-credentials-but-ignore) | troubleshooting | Authentication in django |
+| [YouTube](https://www.youtube.com/watch?v=ZxMB6Njs3ck&list=WL&index=19&t=7646s) | CRUD | tutorial for adding, viewing, updating and deleting items with django the Python|
+| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
+| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/) | entire site | responsivenes and CSS |
+
+### Media
+
+[Pixabay](https://pixabay.com) | articles page | image | group of photos for articles |
+[Freepix](https://www.freepik.com/) | entire site | images | photos used thorough out the site |
+[Freepix,lookstudio](https://www.freepik.com/free-photo/appealing-french-woman-sunglasses-laughing-fashionable-curly-ginger-girl-fooling-around-white-wall_12018194.htm#fromView=search&page=1&position=49&uuid=bbc66285-de26-4c6c-9283-d191d004ac47) | newsletter | image | image used in the newsletter |
+[Freepix,rawpixel.com](https://www.freepik.com/free-photo/digital-lens-isolated-white-background_3276335.htm#fromView=search&page=1&position=31&uuid=387f9284-73f9-4cd5-86aa-8ba203154a39")  | newsletter | image | image used in the newsletter |
+
+### Acknowledgements
+
+I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the [Code Institute Gwent-Bootcamp](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
+- I would like to thank my partner (Michael), for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my daughter (Nicole), for supporting me by doing all the user testing and proof-reading therefore supporting me through this career change towards becoming a software developer.
 
 
 
