@@ -71,11 +71,86 @@ As site admin I can share news in the photography industry so that users on the 
 
 ## Wireframes
 
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used Balsamiq to design my site wireframes
+
+[Balsamiq](https://balsamiq.com/wireframes) 
+  
+
+### Mobile Wireframes
+
+<details>
+
+<summary>
+Click here to see the Mobile Wireframes
+</summary>
+ 
+ Landing Page 
+     -   
+
+Articles 
+     -
+
+Article-details
+    -
+
+Dashboard
+    -
 
 
-### Features
+</details>
 
--_Navigation Bar_
+### Desktop Wireframes
+
+<details>
+
+<summary>
+Click here to see the Desktop Wireframes
+</summary>
+ 
+ Landing Page 
+     -   
+
+Articles 
+     -
+
+Article-details
+    -
+
+Dashboard
+    -
+
+
+</details>
+
+### Tablet Wireframes
+
+<details>
+
+<summary>
+Click here to see the Tablet Wireframes
+</summary>
+ 
+ Landing Page 
+     -   
+
+Articles 
+     -
+
+Article-details
+    -
+
+Dashboard
+    -
+
+
+</details>
+
+## Features
+
+### Existing Features
+
+-**Navigation Bar**
 
 - The navigation bar is available on all 5 pages. It is fully responsive and provides links to all the areas of the website, some links based on whether the user is authenticated and logged in or not. Users are able to navigate on any size device with a burger menu with dropdown for small devices. users can easily click on the site logo to returnm back to the landing page.
 
@@ -93,7 +168,7 @@ As site admin I can share news in the photography industry so that users on the 
 
 
 
--_Landing Page_
+-**Landing Page**
 
 - The landing page has a carousel of 3 images taking up 3/4 of the page. These are images of photographers at work to depict what the site is about. There is an overlay of text on each that gives the purpose of the website and photography qoutes that encourage the users to sign up. The other 1/4 is taken up by three cards that explain the 3 purposes of the site, to showcase their work, provide andn or receive peer review and access information in the photography industry.
 
@@ -106,7 +181,7 @@ Mobile
 Tablet
 
 
--_The Footer_
+-**The Footer**
 
 - The footer like the navbar is accessible on all pages of the website. On this section users can access the social sites of the website. Users have the choice to follow the blog on any of the social medis sites for any news, new implementaions announcements of future features and any updates on the newletter. Users can use these links to contact admin with any feedback and or suggestions.
 
@@ -118,7 +193,7 @@ Tablet
 
  Tablet
 
--_Articles_
+-**Articles**
 
 - The articles section is where users can find , view and read all the articles uploaded on the site. The user can only see a snippet of the articles in this section. 
 - Articles are saved in categories. Users can use the search feature to narrow down on the category they are interested in. 
@@ -150,7 +225,7 @@ Tablet
 
   Tablet
 
--_Dashboard_
+-**Dashboard**
 
 - The Dashboard is only accessible to authenticated logged in users. This is an area where each user can see their own posted articles. In this section they are able to edit and or delete any of their articles. 
 - Users get a message each time they successfully edit and or delete an article. 
@@ -173,7 +248,7 @@ Tablet
 
   
 
--_Newsletter_
+-**Newsletter**
 
 - The Newsletter provides an opportunity to promote photography services, products, workshops, or other offerings to the audience.  The users can benefit from carefully curated industry content that is engaging and informative.
 
@@ -186,7 +261,7 @@ Tablet
   Tablet
   
 
--_Signup_
+-**Signup**
 
 - Signup page allows the users to register and join the aperture adventurers site. 
 - This allows the user to be able to post articles as well as send reviews on other people's work. 
@@ -203,7 +278,7 @@ Tablet
   Tablet
   
 
--_LogIn_ 
+-**LogIn** 
 
 - This page allows already authenticated users to log into the site and access their dashboard as well as read and review other articles on the site.  
 - Users get message to let then know theyve succesfully logged in 
@@ -220,7 +295,7 @@ Tablet
 
   Tablet
   
--_Create Article_
+-**Create Article**
 
 - This page is a form to create and post an article, it is only accessible to authenticated logged in users. 
 - Here the user's can upload their Image , there are fields availalble for the user to state what equipment they used in taking the image and the settings they had on their camera.
@@ -240,18 +315,47 @@ Tablet
 
  Tablet
 
-### Future Implementations
+### Future Features
 
--_User Profiles_
+-**User Profiles**
 
 - Users to have custom user profiles where they can list there accomplishments in photography and share their social media platforms. 
 - Users will have CRUD functionality and autonomy on their profiles
+- Users to be able to add profile images for a more personal feel.
 
--_Reviews_
+-**Reviews**
 
 - Users to have added CRUD functionality on their reviews.
 - Users to be able to like articles as well as review them. 
 
+-**Direct Messaging**
+
+- Users can direct message each other , requesting collaborations or seeking advise for a photo shoot privately. 
+
+
+## Tools and Technologies used 
+
+- [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
+- [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
+- ⚠️⚠️ CHOOSE ONLY ONE <-- delete me ⚠️⚠️
+- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+- ⚠️⚠️ CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
+- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
+- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
+- [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
+- [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
+- [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
+- [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 
 
