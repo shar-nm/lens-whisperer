@@ -5,14 +5,14 @@ Aperture Adventurers is a site intended at aspiring and up-coming photographers.
 As this is a learning platform fully fledged photographers are welcome to join and share their expertise. Admin will provide a newsletter with content ranging from insightful tutorials and gear reviews to sharing information on photography events and exhibition shows around the country.
 
 Here's my deployed site :
-https://photography-blog-cb9808db97a0.herokuapp.com/
+[Aperture Adventurers](https://photography-blog-cb9808db97a0.herokuapp.com/)
 
 
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1870d06d-1d36-4472-9abb-d30eb864da98)
 
 
-source: [https://ui.dev/amiresponsive?url=https://photography-blog-cb9808db97a0.herokuapp.com]
+[Am I Responsive](https://ui.dev/amiresponsive?url=https://photography-blog-cb9808db97a0.herokuapp.com)
 
 
 
@@ -26,30 +26,30 @@ For this Photography blog site. The photographer is menat to feel the ownership 
  ### Color Scheme
 
 
- #33, 37, 42- Raisin Black
- #99, 112, 227 - Neon Blue
- #193, 220, 207 - Ash Gray
- #255, 255, 255 - White
+ - #33, 37, 42- Raisin Black
+ - #99, 112, 227 - Neon Blue
+ - #193, 220, 207 - Ash Gray
+ - #255, 255, 255 - White
 
- Source
+ Source :
 
- COLOORS -  https://coolors.co/21252a-6370e3-c1dccf-ffffff
+ [COLOORS](https://coolors.co/21252a-6370e3-c1dccf-ffffff)
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/5a5fcead-62ab-4b11-8b5d-0e6d42e57d91)
 
 ### Typography
 
-Bitter font with varying weight was used across the site. The font was imported from google fonts. Serif sans is the fall back font in the case of an import error
+- Bitter font with varying weight was used across the site. The font was imported from google fonts. Serif sans is the fall back font in the case of an import error
 
-Google Fonts 
+- Google Fonts 
 https://fonts.google.com/?query=bitter
 
-The icons  used where imported from Font Awesome 
+- The icons  used where imported from Font Awesome 
 
 Font Awesome
 https://fontawesome.com/icons
 
-The favicon used is from the following link
+- The favicon used is from the following link
 
 Favicon.io
 https://favicon.io/emoji-favicons/camera-with-flash
@@ -58,18 +58,18 @@ https://favicon.io/emoji-favicons/camera-with-flash
 
 ### Site Users
 
-As a user I can view the articles so that **read and learn from the articles
-As a user I can review a peer article so that I can make a contribution to the blog article
-As a user I can create an article and post my image so that I can have feedback from other users
-As a user I can edit and or delete my articles so that I can manage my own content on the site
-As a user I can view the other reviews so that I can have a peer discussion for my learning 
-As a user I can signup to the site so that I can post articles and read other people's articles
-As a user I can login to my account  so that I see my previous posted articles 
-As a user I can logout of my account  so that I keep my account secure
+- As a user I can view the articles so that **read and learn from the articles
+- As a user I can review a peer article so that I can make a contribution to the blog article
+- As a user I can create an article and post my image so that I can have feedback from other users
+- As a user I can edit and or delete my articles so that I can manage my own content on the site
+- As a user I can view the other reviews so that I can have a peer discussion for my learning 
+- As a user I can signup to the site so that I can post articles and read other people's articles
+- As a user I can login to my account  so that I see my previous posted articles 
+- As a user I can logout of my account  so that I keep my account secure
 
 ### Site Admin
-As site admin I can access all the articles and reviews so that I can manage the site effectively
-As site admin I can share news in the photography industry so that users on the site ca stay informed
+- As site admin I can access all the articles and reviews so that I can manage the site effectively
+- As site admin I can share news in the photography industry so that users on the site ca stay informed
 
 ## Wireframes
 
@@ -182,7 +182,6 @@ Dashboard
 
 - The footer like the navbar is accessible on all pages of the website. On this section users can access the social sites of the website. Users have the choice to follow the blog on any of the social medis sites for any news, new implementaions announcements of future features and any updates on the newletter. Users can use these links to contact admin with any feedback and or suggestions.
 
-  Desktop
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/40cc11c4-234f-40b5-9b14-d14f64eb3d7a)
 
@@ -300,10 +299,7 @@ Dashboard
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
-- ⚠️⚠️ CHOOSE ONLY ONE <-- delete me ⚠️⚠️
-- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
-- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
-- ⚠️⚠️ CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
+- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
@@ -334,28 +330,31 @@ Site used for ERD
 
 [GitHub Projects](https://github.com/shar-nm/lens-whisperer/projects) 
 
-GitHub Projects is the Agile tool used for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+- GitHub Projects is the Agile tool used for this project.
+- It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+- Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/2f56e05d-b82a-49e2-9e63-6e775f7338af)
+
+![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6d05cae3-d294-4eaf-a1f0-7795655c85ce)
 
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/shar-nm/lens-whisperer/issues) 
 
-This as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
+- This as an another Agile tool.
+- There, I used my own **User Story Template** to manage user stories.
+- It also helped with milestone iterations on a weekly basis.
 
-It also helped with milestone iterations on a weekly basis.
 
-
-- [Open Issues](https://github.com/shar-nm/lens-whisperer/issues) [![GitHub issues](https://img.shields.io/github/issues/shar-nm/lens-whisperer)](https://github.com/shar-nm/lens-whisperer/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
+- [Open Issues](https://github.com/shar-nm/lens-whisperer/issues) [![GitHub issues](https://img.shields.io/github/issues/shar-nm/lens-whisperer)](https://github.com/shar-nm/lens-whisperer/issues) 
 
 - [Closed Issues](https://github.com/shar-nm/lens-whisperer/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/shar-nm/lens-whisperer)](https://github.com/shar-nm/lens-whisperer/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+  ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/4161d145-5c10-4129-8376-5ada809a678c)
+
+  
 
 ### MoSCoW Prioritization
 
@@ -542,16 +541,15 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
-[CI Blog](https://github.com/Code-Institute-Solutions/blog.git)
-[SteinOveHelset](https://github.com/SteinOveHelset/puddle.git)
-[Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw/about)
-
+- [CI Blog](https://github.com/Code-Institute-Solutions/blog.git)
+- [SteinOveHelset](https://github.com/SteinOveHelset/puddle.git)
+- [Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw/about)
 
 
 ### Content
 
- [ChatGPT 3.5](https://chat.openai.com/?model=text-davinci-002-render-sha)
- [Adobe Creative Cloud](https://www.adobe.com/uk/creativecloud/photography/discover.html)
+ - [ChatGPT 3.5](https://chat.openai.com/?model=text-davinci-002-render-sha)
+ - [Adobe Creative Cloud](https://www.adobe.com/uk/creativecloud/photography/discover.html)
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -566,6 +564,8 @@ You can fork this repository by using the following steps:
 
 ### Media
 
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
 [Pixabay](https://pixabay.com) | articles page | image | group of photos for articles |
 [Freepix](https://www.freepik.com/) | entire site | images | photos used thorough out the site |
 [Freepix,lookstudio](https://www.freepik.com/free-photo/appealing-french-woman-sunglasses-laughing-fashionable-curly-ginger-girl-fooling-around-white-wall_12018194.htm#fromView=search&page=1&position=49&uuid=bbc66285-de26-4c6c-9283-d191d004ac47) | newsletter | image | image used in the newsletter |
