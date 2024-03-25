@@ -1,4 +1,4 @@
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/3ecd198d-00ac-4f88-8abd-256412c090ad)# Aperture Adventurers
+Aperture Adventurers
 
 Aperture Adventurers is a site intended at aspiring and up-coming photographers. Photographers can share their work for feedback and reviews from their peers, sharing tips tricks and techniques on how to achieve the best photo. They can be inspiration to each other and help elevate their photography skills and unleash creative potential. 
 
