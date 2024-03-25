@@ -37,22 +37,23 @@ For this Photography blog site. The photographer is menat to feel the ownership 
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/5a5fcead-62ab-4b11-8b5d-0e6d42e57d91)
 
+
+
 ### Typography
 
 - Bitter font with varying weight was used across the site. The font was imported from google fonts. Serif sans is the fall back font in the case of an import error
 
-- Google Fonts 
-https://fonts.google.com/?query=bitter
+[Google Fonts](https://fonts.google.com/?query=bitter)
 
 - The icons  used where imported from Font Awesome 
 
-Font Awesome
-https://fontawesome.com/icons
+[Font Awesome](https://fontawesome.com/icons)
 
 - The favicon used is from the following link
 
-Favicon.io
-https://favicon.io/emoji-favicons/camera-with-flash
+[Favicon.io](https://favicon.io/emoji-favicons/camera-with-flash)
+
+
 
 ### User Stories 
 
@@ -67,9 +68,12 @@ https://favicon.io/emoji-favicons/camera-with-flash
 - As a user I can login to my account  so that I see my previous posted articles 
 - As a user I can logout of my account  so that I keep my account secure
 
+
 ### Site Admin
 - As site admin I can access all the articles and reviews so that I can manage the site effectively
 - As site admin I can share news in the photography industry so that users on the site ca stay informed
+
+
 
 ## Wireframes
 
@@ -78,6 +82,7 @@ I've used Balsamiq to design my site wireframes
 
 [Balsamiq](https://balsamiq.com/wireframes) 
   
+
 
 ### Mobile Wireframes
 
@@ -101,6 +106,8 @@ Dashboard
 
 
 </details>
+
+
 
 ### Desktop Wireframes
 
@@ -148,9 +155,13 @@ Dashboard
 
 </details>
 
+
+
 ## Features
 
+
 ### Existing Features
+
 
 -**Navigation Bar**
 
@@ -176,6 +187,7 @@ Dashboard
 
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9f648f29-3941-499a-89da-2dc0caa1042b)
+
 
 
 -**The Footer**
@@ -214,6 +226,7 @@ Dashboard
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f710b2f4-fb6a-429c-9c9c-db9419c53052)
 
 
+
 -**Dashboard**
 
 - The Dashboard is only accessible to authenticated logged in users. This is an area where each user can see their own posted articles. In this section they are able to edit and or delete any of their articles. 
@@ -224,17 +237,19 @@ Dashboard
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/75efd0af-e594-4bba-b10a-4b1077b9ca26)
 
-  ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b845f586-e79f-4895-abea-5b0fef5adf27)
-
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e388616b-c638-48d8-b516-a3ee9cd32196)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/ac6e2e94-15bb-4b8a-be80-6ad366a10efb)
+
+
 
 -**Newsletter**
 
 - The Newsletter provides an opportunity to promote photography services, products, workshops, or other offerings to the audience.  The users can benefit from carefully curated industry content that is engaging and informative.
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/2634cb10-eaea-4215-b3d3-18526f2d8199)
+
+
 
 -**Signup**
 
@@ -246,6 +261,8 @@ Dashboard
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/38c8b419-dfe4-4e6a-82cc-db2f4826fcd8)
 
+
+
 -**LogIn** 
 
 - This page allows already authenticated users to log into the site and access their dashboard as well as read and review other articles on the site.  
@@ -256,6 +273,8 @@ Dashboard
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/fd9bf4cb-dfbc-4ab8-a57d-60a4cec4c266)
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b4b96e60-f4cc-48dd-9e0b-9c6c87928856)
+
+
   
 -**Create Article**
 
@@ -271,6 +290,7 @@ Dashboard
 
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/93ec5d44-a507-46bd-9488-7139884a21cb)
   
+
 
 ### Future Features
 
@@ -290,6 +310,7 @@ Dashboard
 - Users can direct message each other , requesting collaborations or seeking advise for a photo shoot privately. 
 
 
+
 ## Tools and Technologies used 
 
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
@@ -299,7 +320,8 @@ Dashboard
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
-- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
@@ -310,6 +332,7 @@ Dashboard
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
+
 
 
 ## Database Design 
@@ -324,7 +347,9 @@ Site used for ERD
   ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/419b05b9-654d-4300-8b6d-78a24da6a01d)
 
 
+
 ## Agile Development Process
+
 
 ### GitHub Projects
 
@@ -338,6 +363,7 @@ Site used for ERD
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/2f56e05d-b82a-49e2-9e63-6e775f7338af)
 
 ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6d05cae3-d294-4eaf-a1f0-7795655c85ce)
+
 
 ### GitHub Issues
 
@@ -466,6 +492,7 @@ Or:
 
 The project should now be connected and deployed to Heroku!
 
+
 ### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
@@ -503,6 +530,7 @@ Once the project is cloned or forked, in order to run it locally, you'll need to
 - Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
 - Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
+
 #### Cloning
 
 You can clone the repository by following these steps:
@@ -523,6 +551,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
+
 #### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
@@ -532,6 +561,7 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+
 ### Local VS Deployment
 
 -  Local development environment has different configuration settings compared to the live deployment environment on Heroku. This includes database configurations, static file serving settings, debug mode, logging configurations
@@ -539,11 +569,13 @@ You can fork this repository by using the following steps:
 - Heroku serves static files (CSS, JavaScript, images) using WhiteNoise or by integrating with a content delivery network (CDN). In local environment, Django's development server handles static files differently.
 - Heroku provides security measures such as HTTPS support, automated security updates, and platform-level security features. These are not be present or configured in local development environment.
 
+
 ## Credits
 
 - [CI Blog](https://github.com/Code-Institute-Solutions/blog.git)
 - [SteinOveHelset](https://github.com/SteinOveHelset/puddle.git)
 - [Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw/about)
+
 
 
 ### Content
@@ -564,12 +596,15 @@ You can fork this repository by using the following steps:
 
 ### Media
 
+
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 [Pixabay](https://pixabay.com) | articles page | image | group of photos for articles |
 [Freepix](https://www.freepik.com/) | entire site | images | photos used thorough out the site |
 [Freepix,lookstudio](https://www.freepik.com/free-photo/appealing-french-woman-sunglasses-laughing-fashionable-curly-ginger-girl-fooling-around-white-wall_12018194.htm#fromView=search&page=1&position=49&uuid=bbc66285-de26-4c6c-9283-d191d004ac47) | newsletter | image | image used in the newsletter |
 [Freepix,rawpixel.com](https://www.freepik.com/free-photo/digital-lens-isolated-white-background_3276335.htm#fromView=search&page=1&position=31&uuid=387f9284-73f9-4cd5-86aa-8ba203154a39")  | newsletter | image | image used in the newsletter |
+
+
 
 ### Acknowledgements
 
