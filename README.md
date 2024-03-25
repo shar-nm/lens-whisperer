@@ -439,15 +439,6 @@ SS
 
  SS
 
-- Performance Testing (optional):
-	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
-	- Scalability Testing: Assess how the site handles increased traffic or usage.
-
-
-Documentation and Logs:
-
-Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
-
 User Feedback Incorporation:
 
 Color contrast user feedback has been taken into account and implemented to enhance the user experience. Text in article description has been changed from gray to black.
@@ -463,15 +454,22 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| article | article-details.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | new-article.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | reviews.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | delete.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| dashboard | dash.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | main.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | news.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | article-details.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/a053e461-7751-43cd-94c3-c4af879622a5)
+| |
+| article | index.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/af5aa9d3-f804-43b8-b245-c4f12ba6d03d)
+ |
+| article | new-article.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/73097b72-d492-45c3-8c49-bfd1c649c799)
+| |
+| article | reviews.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b7933854-dc4a-4a59-9618-5d81441e635c)
+| |
+| article | delete.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/779db71a-4c1b-4532-bf27-87ec47861cdb)
+| |
+| dashboard | dash.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/baf1f873-e85b-4b87-8783-ca444d99646a)
+| |
+| mainhub | main.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/dac1d13c-636e-49d4-a41c-a0d90e4e6a8a)
+| |
+| newsletter | news.html |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/7e14beff-bcce-44ec-a164-bc9e83d4395d)
+| |
 
 ### CSS
 
@@ -479,15 +477,8 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| static | custom.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-
-### JavaScript
-
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
-
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| static | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | custom.css |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/38b562bf-91b9-45dc-a5cf-0ad6af8e810c)
+| |
 
 ### Python
 
@@ -495,26 +486,40 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| article | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| article | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| dashboard | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| dashboard | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| dashboard | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| dashboard | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| mainhub | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| photography | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| photography | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| article | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/admin.py) | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/20dac913-b201-4edc-b685-45fdeab25a02)
+ |
+| article | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/forms.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/09d20202-b24a-4082-a3c1-dd41ef7cfdfc)
+| |
+| article | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/models.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/4a299bad-4fe2-4cc7-91ed-affc0437d1e9)
+| |
+| article | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/urls.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/0b62fec1-4b74-46b7-bfc5-6d8275edee5b)
+| |
+| article | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/article/views.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9be3d15e-4bcc-4b40-a3da-7c2278ad40c5)
+| |
+| dashboard | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/admin.py) | not used | |
+| dashboard | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/models.py) | not used | |
+| dashboard | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/urls.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/556c3f6f-bf57-403a-82e4-f75a5b6f6f11)
+| |
+| dashboard | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/dashboard/views.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/16408100-8320-4fa6-a6cd-1e36c67f2cd5)
+| |
+| mainhub | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/admin.py) | not used | |
+| mainhub | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/models.py) | not used | |
+| mainhub | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/urls.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/dd149a08-788d-481f-8dc2-160d2a4d9376)
+| |
+| mainhub | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/mainhub/views.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/7985e2e7-5ec3-472a-9aa5-bfa63163e532)
+| |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/manage.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f3ccf9b6-0ba4-4b3f-8bfa-83ff2b77ee10)
+| |
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/admin.py) | not used | |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/models.py) | not used | |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/urls.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/5fb2274c-3248-4ae1-8631-92e3ed6b41d7)
+| |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/newsletter/views.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/722e296b-4b86-4c58-ac5f-3d1269ab374b)
+| |
+| photography | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/settings.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/c7eacfeb-db05-48d8-b491-7c838a251468)
+| |
+| photography | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/shar-nm/lens-whisperer/main/photography/urls.py) |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/c4214b8f-494f-4bbe-8426-a338d4a2a409)
+| |
 
 ## Browser Compatibility
 
