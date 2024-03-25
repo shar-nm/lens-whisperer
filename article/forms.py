@@ -87,3 +87,4 @@ class ReviewForm(forms.ModelForm):
                 'class': 'form-control py-4 px-6 rounded-xl border'
             })
         }
+        
