@@ -12,7 +12,66 @@ https://photography-blog-cb9808db97a0.herokuapp.com/
 
 source: [https://ui.dev/amiresponsive?url=https://photography-blog-cb9808db97a0.herokuapp.com]
 
+
+
 ## UX 
+
+For this Photography blog site. The photographer is menat to feel the ownership of the site. There is an image whith photography reference on each page, with the landing page consisting of 3 photographers. A man and a young woman to show inclusivity of all genders and age groups. The login and signup forms have a retro camera inbedded to keep with the recurring theme. 
+
+ The site carrys a clean theme and the colors as nuetral as possible. One of the platform's main objectives is to share images. Images will have all different colors amnd composition therefore the need  to reduce the noise and let the images be the focal point. The background body has been kept white with a dark footer to frame the content, the crispy green tone of the navbar is to provide freshness and subtle to give the content precidence. 
+
+ 
+ ### Color Scheme
+
+
+ #33, 37, 42- Raisin Black
+ #99, 112, 227 - Neon Blue
+ #193, 220, 207 - Ash Gray
+ #255, 255, 255 - White
+
+ Source
+
+ COLOORS -  https://coolors.co/21252a-6370e3-c1dccf-ffffff
+
+IMAGE HERE
+
+### Typography
+
+Bitter font with varying weight was used across the site. The font was imported from google fonts. Serif sans is the fall back font in the case of an import error
+
+Google Fonts 
+https://fonts.google.com/?query=bitter
+
+The icons  used where imported from Font Awesome 
+
+Font Awesome
+https://fontawesome.com/icons
+
+The favicon used is from the following link
+
+Favicon.io
+https://favicon.io/emoji-favicons/camera-with-flash
+
+### User Stories 
+
+### Site Users
+
+As a user I can view the articles so that **read and learn from the articles
+As a user I can review a peer article so that I can make a contribution to the blog article
+As a user I can create an article and post my image so that I can have feedback from other users
+As a user I can edit and or delete my articles so that I can manage my own content on the site
+As a user I can view the other reviews so that I can have a peer discussion for my learning 
+As a user I can signup to the site so that I can post articles and read other people's articles
+As a user I can login to my account  so that I see my previous posted articles 
+As a user I can logout of my account  so that I keep my account secure
+
+### Site Admin
+As site admin I can access all the articles and reviews so that I can manage the site effectively
+As site admin I can share news in the photography industry so that users on the site ca stay informed
+
+## Wireframes
+
+
 
 ### Features
 
@@ -181,7 +240,17 @@ Tablet
 
  Tablet
 
+### Future Implementations
 
+-_User Profiles_
+
+- Users to have custom user profiles where they can list there accomplishments in photography and share their social media platforms. 
+- Users will have CRUD functionality and autonomy on their profiles
+
+-_Reviews_
+
+- Users to have added CRUD functionality on their reviews.
+- Users to be able to like articles as well as review them. 
 
 
 
