@@ -6,6 +6,8 @@ Here's my deployed site :
 https://photography-blog-cb9808db97a0.herokuapp.com/
 
 
+![Responsive Mockup] (documentation/mockup.png)
+
 source: [https://ui.dev/amiresponsive?url=https://photography-blog-cb9808db97a0.herokuapp.com]
 
 ## UX 
