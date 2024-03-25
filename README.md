@@ -1,4 +1,4 @@
-Aperture Adventurers
+# Aperture Adventurers
 
 Aperture Adventurers is a site intended at aspiring and up-coming photographers. Photographers can share their work for feedback and reviews from their peers, sharing tips tricks and techniques on how to achieve the best photo. They can be inspiration to each other and help elevate their photography skills and unleash creative potential. 
 
@@ -93,13 +93,10 @@ Click here to see the Mobile Wireframes
 </summary>
  
  Landing Page 
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/5e44ceb1-ce56-4d10-ab9f-1e6aaba6a526)
-
-     
+     -   
 
 Articles 
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/50531c2b-fbbd-4a72-8fdc-f4e763c10be6)
-
+     -
 
 Article-details
     -
@@ -121,23 +118,40 @@ Click here to see the Desktop Wireframes
 </summary>
  
  Landing Page 
- ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/884b4a73-0c99-4ebe-9a4e-bc6a5c4b3247)
-
+     -   
 
 Articles 
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/efc5be24-d93d-40e9-a51f-3849f1a98785)
-
+     -
 
 Article-details
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/103dbde1-872f-4976-8cfa-7a14351ff968)
-
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/bcde5e7f-12cf-4f23-9343-82577f818cfe)
+    -
 
 Dashboard
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/a92bd403-056f-47de-83e4-0a2a0c055d4a)
+    -
 
-Newsletter
-![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/add1e35b-00ef-4dd5-9754-6a99427c7e00)
+
+</details>
+
+### Tablet Wireframes
+
+<details>
+
+<summary>
+Click here to see the Tablet Wireframes
+</summary>
+ 
+ Landing Page 
+     -   
+
+Articles 
+     -
+
+Article-details
+    -
+
+Dashboard
+    -
+
 
 </details>
 
@@ -385,6 +399,25 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 > [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
+Feature-by-Feature Testing:
+
+- Navigation:
+Testested for smooth transitions between pages, links directing to the correct destinations.
+- Responsive Design: 
+Checked for compatibility across various devices and screen sizes.
+
+SS
+
+
+- Portfolio Display: 
+Articles are properly showcased with accurate descriptions, images, and links.
+
+
+
+- Contact Forms: 
+Tested the form submission process, ensuring the user receives a confirmation.
+
+SS
 
 User Experience Testing:
 
@@ -404,16 +437,7 @@ SS
 - Device Compatibility:
  EnsurED Functionality across various devices (desktops, laptops, tablets, and mobile phones).
 
--Mobile Phones
-
-
-
-
-
-
-
-
-
+ SS
 
 User Feedback Incorporation:
 
@@ -501,95 +525,90 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | Articles | Newsletter | | Notes |
+| Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/af3fa93f-a0c6-4a90-a193-cc05f397e21d)
-|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f541033c-dc7f-44d2-b407-e205f008999e)
-| ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/81ae2419-7392-4f4f-a6a7-7b9b0c9c973b)
- || Works as expected |
-| Safari |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9aba2a87-97a0-4b74-b9e4-9b409d0c7f7a)
- ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/cc018aeb-d277-406b-95cb-c94f5f5975f1)
-|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/114619ad-1db2-48a4-897c-baf74c86cff6)
-|||Minor CSS differences|
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
+
 
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home |  |  | | Notes |
+| Device | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/46e12b78-023c-4e08-af32-85c3c63bdd0b)
-|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6ac914cf-5938-4fe1-8ed9-43ce89d2b8e4)|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f661eabc-ea61-4462-99f2-9009aa28a6d4)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/b9914c37-b162-4a17-9093-161272fc292e)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/69d094e9-c7b5-45df-87d5-dd69ff505414)
-| Works as expected |
-| Tablet (DevTools) | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e31054f3-8f1b-4c74-951a-4e69aa5f1c69)|
-![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/88046cdd-ca38-4cf6-9e59-bd0beaceffc2)
-| ![screenshot] ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1cd7387d-2087-48d2-8585-147b5a046ce4)|
- ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/a8293760-eb93-4aa1-a424-9096ddb0154d)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6debb803-5b89-4eca-b407-d6a69e7e01a7)
-| Works as expected |
-| Desktop | ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/9362d47b-5b80-4ee4-b7d3-832a86c56335)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/be13226c-96cf-4faf-8e4f-3d27558ba6a9)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/da240a28-ac26-44e8-9ee6-1ee764df9faf)
-| ![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e9ad7dcb-bd02-4a7f-9d00-daf8cc93f931)|
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
+| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
+| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
+| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
 
 ## Lighthouse Audit
+
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/520a9bc0-6a6f-4931-94b6-3b3b4f980b51)
-|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/471b77f3-1cd0-41a0-ad15-f7627f713e4c) performance due to internet connection |
-| Articles |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/6488b0b6-169a-4dc1-b1d8-4a318ee025db)
-|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/94b4454f-55fc-41b3-9763-d4b6ca95357a)
-| Some minor warnings |
-| Newsletter |![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e0d546d1-e9f7-4b1c-be8c-fe4cada86360)|![screenshot]![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/3fdaf010-40f6-42fa-b3a3-e5013b5d13da)
-| Slow response time due to large images |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
+| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
+| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
+| x | x | x | repeat for any other tested pages/sizes |
 
 ## Defensive Programming
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
 | Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass |Y |
-| | Click on Home link in navbar | Redirection to Home page | Pass | Y|
-| Articles | | | | |
-| | Click on Articles link in navbar | Redirection to Articles page | Pass |Y |
-| | Load Articles images | All images load as expected | Pass |Y |
+| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Home link in navbar | Redirection to Home page | Pass | |
+| Gallery | | | | |
+| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
+| | Load gallery images | All images load as expected | Pass | |
+| Contact | | | | |
+| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
 | Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass |Y|
-| | Enter valid email address | Field will only accept email address format | Pass |Y|
-| | Enter valid password (twice) | Field will only accept password format | Pass |Y |
+| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password (twice) | Field will only accept password format | Pass | |
+| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
+| | Confirm email | Redirects user to blank Sign In page | Pass | |
 | Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass |Y |
-| | Enter valid email address | Field will only accept email address format | Pass | Y|
-| | Enter valid password | Field will only accept password format | Pass |Y |
-| | Click Login button | Redirects user to home page | Pass |Y |
+| | Click on the Login link | Redirection to Login page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password | Field will only accept password format | Pass | |
+| | Click Login button | Redirects user to home page | Pass | |
 | Log Out | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | Y|
-| Artilcle/more... | | | | |
-| | Click onArtilcle/more...link | User will be redirected to the article details page | Pass | Y|
-| | Click on the Edit button | User will be redirected to the edit article page | Pass | Y|
-| | Click on the Delete button | User will be redirected to Delete page | Pass | Cornfirms delete first| Y|
-| | Accessing Article details without authrntication and or log in | User should be given an error | Pass | Redirects user back to login and or signup |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Profile | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
+| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+| repeat for all remaining pages | x | x | x | x |
 
 ## User Story Testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a site user, I would like to signup to the site so that I can can post articles and read other people's articles | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/89bd41bc-65f7-482f-8f0c-88dbbbdada9f)
-| As a site user,I can login to my account, so that I can I see my previous posted articles  |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/1ce882ac-0cd3-4e22-96c2-cb07c7995683)
-| As a site user I can view the articles, so that I can read and learn from the articles. | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/178d76a5-93a3-4e1f-af14-05028456459a)|
-| As a site user I can review a peer's article, so that I can I can make a contribution to the blog article | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/f4b7cd52-1d51-47d5-8806-8bed51f16f6b)|
-| As a site user I can create an article and post my image , so that I can feedback from other users. |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/cdaf0bf3-68ee-4826-8a7b-879313c8c208)|
-| As a site user I can edit and or delete my articles, so that I can manage my own content on the site | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d7a71a35-65e9-414e-b26c-4aede0a04623)|
-| As a site user I can logout of my account so that I can keep my account secure
-|![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/d3c832a3-9643-4264-8d44-a3be42f5f2a5)|
-| As a site admin, I should be able to access all the articles and reviews, so that I can manage the site effectively. | ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/071520c3-a98a-4f66-884f-ae8625c13879)
-| As a site admin, I should be able to  share news in the photography industry so that I can keep users informed. |![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/e145bd04-d862-4179-b7c6-f974f36a130b)
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
+| repeat for all remaining user stories | x |
 
 
 ## Deployment
@@ -796,6 +815,7 @@ You can fork this repository by using the following steps:
 [Freepix](https://www.freepik.com/) | entire site | images | photos used thorough out the site |
 [Freepix,lookstudio](https://www.freepik.com/free-photo/appealing-french-woman-sunglasses-laughing-fashionable-curly-ginger-girl-fooling-around-white-wall_12018194.htm#fromView=search&page=1&position=49&uuid=bbc66285-de26-4c6c-9283-d191d004ac47) | newsletter | image | image used in the newsletter |
 [Freepix,rawpixel.com](https://www.freepik.com/free-photo/digital-lens-isolated-white-background_3276335.htm#fromView=search&page=1&position=31&uuid=387f9284-73f9-4cd5-86aa-8ba203154a39")  | newsletter | image | image used in the newsletter |
+
 
 
 ### Acknowledgements
