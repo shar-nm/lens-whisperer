@@ -358,11 +358,63 @@ Tablet
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 
+## Database Design 
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
+Understanding the relationships between different tables can save time later in the project.
+
+Site used for ERD
+
+- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/shar-nm/lens-whisperer/projects) 
+
+GitHub Projects is the Agile tool used for this project.
+It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/shar-nm/lens-whisperer/issues) 
+
+This as an another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped with milestone iterations on a weekly basis.
+
+
+- [Open Issues](https://github.com/shar-nm/lens-whisperer/issues) [![GitHub issues](https://img.shields.io/github/issues/shar-nm/lens-whisperer)](https://github.com/shar-nm/lens-whisperer/issues)
+
+    ![screenshot](documentation/gh-issues-open.png)
+
+- [Closed Issues](https://github.com/shar-nm/lens-whisperer/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/shar-nm/lens-whisperer)](https://github.com/shar-nm/lens-whisperer/issues?q=is%3Aissue+is%3Aclosed)
+
+    ![screenshot](documentation/gh-issues-closed.png)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
+
+
+## Testing
+
+TESTING.MD
 
 
 
-
-
+## Deployment
 
 
 
