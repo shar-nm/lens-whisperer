@@ -1,6 +1,8 @@
 # Aperture Adventurers
 
-Aperture Adventurers is a site intended at aspiring and up-coming photographers. Photographers can share their work for feedback and reviews from their peers, sharing tips tricks and techniques on how to achieve the best photo. They can be inspiration to each other and help elevate their photography skills and unleash creative potential. As this is a learning platform fully fledged photographers are welcome to join and share their expertise. Admin will provide a newsletter with content ranging from insightful tutorials and gear reviews to sharing information on photography events and exhibition shows around the country.
+Aperture Adventurers is a site intended at aspiring and up-coming photographers. Photographers can share their work for feedback and reviews from their peers, sharing tips tricks and techniques on how to achieve the best photo. They can be inspiration to each other and help elevate their photography skills and unleash creative potential. 
+
+As this is a learning platform fully fledged photographers are welcome to join and share their expertise. Admin will provide a newsletter with content ranging from insightful tutorials and gear reviews to sharing information on photography events and exhibition shows around the country.
 
 Here's my deployed site :
 https://photography-blog-cb9808db97a0.herokuapp.com/
@@ -33,7 +35,7 @@ For this Photography blog site. The photographer is menat to feel the ownership 
 
  COLOORS -  https://coolors.co/21252a-6370e3-c1dccf-ffffff
 
-IMAGE HERE
+![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/5a5fcead-62ab-4b11-8b5d-0e6d42e57d91)
 
 ### Typography
 
@@ -322,6 +324,8 @@ Understanding the relationships between different tables can save time later in 
 Site used for ERD
 
 - [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+
+  ![image](https://github.com/shar-nm/lens-whisperer/assets/158847256/419b05b9-654d-4300-8b6d-78a24da6a01d)
 
 
 ## Agile Development Process
